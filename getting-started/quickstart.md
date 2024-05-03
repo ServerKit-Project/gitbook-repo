@@ -4,7 +4,7 @@ description: How to get started quickly with ServerKit.
 
 # Quickstart
 
-프로젝트 로그인 서버키트는 쉽고 빠르게 백앤드 개발을 도와줄수 있는 놀라운 도구 입니다.
+회원가입 프로젝트 로그인 서버키트는 쉽고 빠르게 백앤드 개발을 도와줄수 있는 놀라운 도구 입니다.
 
 이 섹션에서는 간단한 예제를 통해 ServerKit의 주요 기능을 빠르게 배울 수 있는 방법을 함께 진행해 보겠습니다.&#x20;
 
@@ -20,11 +20,11 @@ description: How to get started quickly with ServerKit.
 
 회원가입 버튼을 클릭해서 서버키트를 사용할 계정을 생성 후 로그인 합니다.
 
-회원가입이 완료되면 자동으로 로그인이 됩니다.
+회원가입이 완료되면 자동으로 로그인이 됩니다
 
-<figure><img src="../.gitbook/assets/회원가입.png" alt=""><figcaption><p>로그인</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/회원가입 영상.gif" alt=""><figcaption><p>회원가입 영상</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/스크린샷 2024-04-25 오전 11.50.44.png" alt=""><figcaption><p>회원가입</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/로그인 영상 (1).gif" alt=""><figcaption><p>로그인 영상</p></figcaption></figure>
 
 ### 데이터 구조 구상
 
@@ -44,13 +44,11 @@ description: How to get started quickly with ServerKit.
 
 새프로젝트 생성을 클릭 후 프로젝트 이름을 작성합니다.&#x20;
 
-<figure><img src="../.gitbook/assets/스크린샷 2024-04-25 오후 2.26.30.png" alt=""><figcaption><p>프로젝트 생성</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/프로젝트 생성.png" alt=""><figcaption></figcaption></figure>
 
 원하는 색상이나 설명을 입력하면 향후 프로젝트 관리에 도움이 됩니다.
 
-<figure><img src="../.gitbook/assets/스크린샷 2024-02-14 오후 2.57.06.png" alt=""><figcaption><p>프로젝트 기본정보 입력</p></figcaption></figure>
-
-
+<figure><img src="../.gitbook/assets/프로젝트 생성1.png" alt=""><figcaption></figcaption></figure>
 
 ## Step 2: Data Design
 
@@ -62,19 +60,17 @@ description: How to get started quickly with ServerKit.
 
 스키마는 스킴키트 메뉴로 들어가면 만들 수 있습니다.
 
-<figure><img src="../.gitbook/assets/스크린샷 2024-04-25 오전 11.55.24 (1).png" alt=""><figcaption><p>스킴키트 메뉴</p></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/스크린샷 2024-04-25 오전 11.57.00.png" alt=""><figcaption><p>스킴키트 새운 스키마 생성</p></figcaption></figure>
-
 스킴키트는 일반 문자 타입 부터 이메일 같은 고급 타입까지 다양한 타입을 지원합니다.
 
 게시판에 필요한 데이터 구조를 만들어 보겠습니다.
 
-<figure><img src="../.gitbook/assets/스크린샷 2024-02-14 오후 3.16.03.png" alt=""><figcaption><p>스키마 생성</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/스킴 키트.png" alt=""><figcaption></figcaption></figure>
 
 원하는 타입을 필드로 Drag and Drop 해서 아주 편하게 스키마를 만들 수 있습니다.
 
 앞서 구상한 대로 데이터 구조를 하나하나 만듭니다.
+
+<figure><img src="../.gitbook/assets/스키마 작성 (2).gif" alt=""><figcaption></figcaption></figure>
 
 제목, 게시물 내용, 작성자는 문자 (String)타입으로 만듭니다.
 
@@ -90,15 +86,13 @@ description: How to get started quickly with ServerKit.
 
 데이터베이스 생성은 DB키트메뉴에 들어가서 만들 수 있습니다.
 
-<figure><img src="../.gitbook/assets/스크린샷 2024-04-25 오후 12.04.49.png" alt=""><figcaption><p>디비키트 메뉴</p></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/스크린샷 2024-04-25 오후 12.05.39.png" alt=""><figcaption><p>디비키트 생성</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/데이터베이스 생성.png" alt=""><figcaption></figcaption></figure>
 
 인제 만든 게시판 데이터 구조를 사용하기 위해 DB키트로 이동해서 새 데이터베이스 생성을 클릭해줍니다. 차례대로 이름, 설명을 적는 기본 정보 설정을 해준 다음을 클릭 합니다.
 
-<figure><img src="../.gitbook/assets/스크린샷 2024-02-14 오후 3.19.48.png" alt=""><figcaption><p>디비키트 스키마 선택</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/데이터 베이스 생성2 (1).png" alt=""><figcaption></figcaption></figure>
 
-디자인 선택에서 SchemeKit에서 만든 게시판 데이터 구조를 선택합니다.&#x20;
+디자인 선택에서 SchemeKit에서 만든 게시판 데이터 구조를 선택합니다. ![](<../.gitbook/assets/데이터 베이스 생성1 (2).png>)
 
 데이터 베이스를 작성하는 단계는 기본정보 설정 부터 완료까지 크게 4단계 입니다.
 
@@ -146,6 +140,8 @@ endNode 에는 로직보드의 실행 결과를 입력 할 수 있습니다.
 
 pin(노드들의 맨 위에 달려있는 flow로 회색 선)에 따라 순서대로 설명드리도록 하겠습니다.
 
+<figure><img src="../.gitbook/assets/로직보드 화면 (2).png" alt=""><figcaption></figcaption></figure>
+
 <figure><img src="../.gitbook/assets/스크린샷 2024-02-14 오후 3.31.11.png" alt=""><figcaption><p>로직키트 보드</p></figcaption></figure>
 
 ### 1. Start 노드
@@ -153,6 +149,8 @@ pin(노드들의 맨 위에 달려있는 flow로 회색 선)에 따라 순서대
 Start 노드에서 모든게 시작됩니다. 첫 시작을 하는 노드이기 때문에 지금과 같이 제목, 내용, 좋아요, 조회, 작성자를 만드면 클라이언트로부터 저 데이터들을 받겠다는 의미가 됩니다.&#x20;
 
 한개의 로직에는 1개의 시작 노드가 존재합니다.
+
+
 
 ### 2. postCrate 모듈
 

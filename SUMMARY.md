@@ -1,11 +1,13 @@
 # Table of contents
 
-* [Introduction](README.md)
-
 ## Getting Started
 
-* [Architecture](getting-started/architecture.md)
+* [Architecture](README.md)
 * [Quickstart](getting-started/quickstart.md)
+
+***
+
+* [Introduction](<README (1).md>)
 
 ## Project Manager
 
