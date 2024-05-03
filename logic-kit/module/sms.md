@@ -1,17 +1,3 @@
-## naver
-### Parameters
-- serviceId: string
-- from: string
-- content: string
-- to: string
-- accessKey: string
-- signature: string
-- timestamp: string
-
-### Return
-- result: object
-
---------------------------------------------
 ## naverSignature
 ### Parameters
 - method: string
@@ -29,15 +15,6 @@
 No Param
 ### Return
 - result: string
-
---------------------------------------------
-## sejongtelecomMany
-### Parameters
-- callback: string
-- contents: Array<string>
-
-### Return
-- result: Array<string>
 
 --------------------------------------------
 ## sejongtelecom
@@ -63,32 +40,13 @@ No Param
 ### Return
 No Return
 --------------------------------------------
-## sejongtelecomTime
+## sejongtelecomMany
 ### Parameters
 - callback: string
-- contents: string
-- receiverTelNo: string
-- userKey: string
-- resellerCode: string
-- sejongApiKey: string
-- url: string
-- time: date
-- title: string
-- checkInId: string
+- contents: Array<string>
 
 ### Return
-No Return
---------------------------------------------
-## naverSignature
-### Parameters
-- method: string
-- url: string
-- timestamp: string
-- accessKey: string
-- secretKey: string
-
-### Return
-- result: string
+- result: Array<string>
 
 --------------------------------------------
 ## naver
@@ -104,45 +62,6 @@ No Return
 ### Return
 - result: object
 
---------------------------------------------
-## naverTimestamp
-### Parameters
-No Param
-### Return
-- result: string
-
---------------------------------------------
-## sejongtelecom
-### Parameters
-- callback: string
-- contents: string
-- receiverTelNo: string
-- userKey: string
-- resellerCode: string
-- sejongApiKey: string
-- url: string
-- title: string
-
-### Return
-- result: number
-
---------------------------------------------
-## sejongtelecomMany
-### Parameters
-- callback: string
-- contents: Array<string>
-
-### Return
-- result: Array<string>
-
---------------------------------------------
-## sejongtelecomManyTime
-### Parameters
-- callback: string
-- contents: Array<string>
-
-### Return
-No Return
 --------------------------------------------
 ## sejongtelecomTime
 ### Parameters

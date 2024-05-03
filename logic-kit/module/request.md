@@ -5,10 +5,3 @@ No Param
 - result: string
 
 --------------------------------------------
-## ip
-### Parameters
-No Param
-### Return
-- result: string
-
---------------------------------------------
