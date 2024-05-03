@@ -1,5 +1,5 @@
 
-## format
+## __dirname
 
 ### Parameters
 No Param
@@ -7,7 +7,7 @@ No Param
 ### Return
 No Return
 
-## parse
+## __filename
 
 ### Parameters
 No Param

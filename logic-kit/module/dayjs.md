@@ -1,500 +1,360 @@
-# Dayjs
 
-ServerKit에서 제공하는 Day.js 모듈 리스트입니다.
+## add
 
-* add
-* dayjs
-* diffDay
-* diffHour
-* diffMillisecond
-* diffMinute
-* diffMonth
-* diffQuarter
-* diffSecond
-* diffWeek
-* diffYear
-* format
-* getDate
-* getDay
-* getHour
-* getMillisecond
-* getMonth
-* getSecond
-* getYear
-* isAfter
-* isBefore
-* isBetween
-* isSame
-* setDate
-* setDay
-* setHour
-* setMillisecond
-* setMinute
-* setMonth
-* setSecond
-* setYear
-* subtract
-* timeAsiaSeoul
-* timeOther
-
-
-
-## dayjs.add 모듈
-
-특정 날짜에 지정된 시간 단위만큼 시간을 추가합니다. 이 모듈은 날짜 조작을 위해 사용되며, 특정 기간 후의 날짜를 계산할 때 유용합니다.
-
-```javascript
-javascriptCopy codeconst dayjs = require("dayjs"); // dayjs 라이브러리를 불러옵니다.
-const date = "2021-03-01"; // 기준 날짜를 설정합니다.
-const number = 5; // 추가할 수량을 지정합니다.
-const unit = "day"; // 추가할 단위를 지정합니다.
-
-const result = dayjs(date).add(number, unit).format(); // 날짜에 일수를 더하고 포맷팅합니다.
-console.log("result: ", result);
-// result: "2021-03-06"
-```
-
-### Param
-
-* **date (string)**: 기준 날짜입니다. ISO 8601 날짜 문자열 형태로 제공되어야 합니다.
-* **number (number)**: 추가할 시간의 수치입니다.
-* **unit (string)**: 추가할 시간의 단위입니다. 예를 들어 'day', 'month', 'year' 등이 가능합니다.
+### Parameters
+No Param
 
 ### Return
+No Return
 
-* **result (string)**: 계산된 날짜를 문자열로 반환합니다. 반환되는 날짜 형식은 ISO 8601 표준을 따릅니다.
+## dayjs
 
-이 함수는 `dayjs` 라이브러리를 사용하여 지정된 날짜에 `number`만큼의 시간을 `unit` 단위로 추가합니다. 계산 결과는 ISO 8601 날짜 형식의 문자열로 반환됩니다.
+### Parameters
+- date: string
 
-## dayjs 모듈
-
-### Param
-
-* **date (string)**: ISO 8601 날짜 문자열 형태로 제공됩니다. 날짜 문자열이 주어지면 해당 날짜와 시간으로 `dayjs` 객체를 생성합니다. 문자열이 제공되지 않을 경우 현재 날짜와 시간으로 객체가 생성됩니다.
 
 ### Return
+- result: date
 
-* **result (date)**: `dayjs` 객체의 날짜를 문자열 형식으로 반환합니다. 이 문자열은 ISO 8601 날짜 형식을 따릅니다.
 
-이 함수는 `dayjs` 라이브러리를 사용하여 입력받은 `date` 문자열이 있으면 해당 날짜에 대한 `dayjs` 객체를 생성하고, 없으면 현재 날짜와 시간의 객체를 생성합니다. 생성된 객체는 ISO 8601 표준 형식의 문자열로 변환되어 반환됩니다.
+## diffDay
 
-## diffDay 모듈
+### Parameters
+- startDate: date
+- endDate: date
 
-### Param
-
-* **startDate (date)**: 시작 날짜입니다. 날짜는 문자열 형식으로 제공되며, ISO 8601 표준에 따라야 합니다.
-* **endDate (date)**: 종료 날짜입니다. 이 날짜도 문자열 형식으로 제공되며, ISO 8601 표준을 따라야 합니다.
 
 ### Return
+- result: number
 
-* **result (number)**: 시작 날짜와 종료 날짜 사이의 일 수 차이를 정수 형태로 반환합니다. 반환되는 값은 시작 날짜가 종료 날짜보다 이전이면 양수, 이후면 음수입니다.
 
-이 함수는 `dayjs` 라이브러리를 사용하여 입력받은 `startDate`와 `endDate` 사이의 일수 차이를 계산합니다. 계산은 시작 날짜와 종료 날짜가 주어진 순서에 따라 양수 또는 음수로 표현될 수 있습니다. 이 값은 계획된 이벤트의 지속 기간이나 마감 기한을 계산할 때 유용하게 사용될 수 있습니다.
+## diffHour
 
-\
-dayjs.diffHour 모듈
------------------
+### Parameters
+- startDate: date
+- endDate: date
 
-### Param
-
-* **startDate (date)**: 시작 날짜입니다. 날짜는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
-* **endDate (date)**: 종료 날짜입니다. 이 날짜도 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
 
 ### Return
+- result: number
 
-* **result (number)**: 시작 날짜와 종료 날짜 사이의 시간 차이를 정수 형태로 반환합니다. 이 값은 두 날짜 사이의 전체 시간 차이를 시간 단위로 표현하며, 시작 날짜가 종료 날짜보다 이전이면 양수, 이후면 음수로 나타납니다.
 
-이 함수는 `dayjs` 라이브러리를 사용하여 입력된 `startDate`와 `endDate` 사이의 시간 차이를 계산합니다. 계산된 결과는 시간 단위로 표현되며, 이는 이벤트의 지속 시간이나 마감까지 남은 시간을 계산할 때 유용합니다.
+## diffMinute
 
-\
-dayjs.diffMillisecond 모듈
-------------------------
+### Parameters
+- startDate: date
+- endDate: date
 
-### Param
-
-* **startDate (date)**: 시작 날짜입니다. 날짜는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
-* **endDate (date)**: 종료 날짜입니다. 이 날짜도 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
 
 ### Return
+- result: number
 
-* **result (number)**: 시작 날짜와 종료 날짜 사이의 밀리초 단위의 차이를 정수 형태로 반환합니다. 이 값은 두 날짜 사이의 전체 시간 차이를 밀리초 단위로 표현하며, 시작 날짜가 종료 날짜보다 이전이면 양수, 이후면 음수로 나타납니다.
 
-이 함수는 `dayjs` 라이브러리를 사용하여 입력된 `startDate`와 `endDate` 사이의 밀리초 차이를 계산합니다. 이 기능은 특히 정밀한 시간 측정이 필요할 때 유용하며, 이벤트의 정확한 지속 시간이나 시간 기반의 세밀한 처리가 필요할 때 사용됩니다.
+## diffMillisecond
 
-## dayjs.diffMinute 모듈
+### Parameters
+- startDate: date
+- endDate: date
 
-### Param
-
-* **startDate (date)**: 시작 날짜입니다. 날짜는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
-* **endDate (date)**: 종료 날짜입니다. 이 날짜도 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
 
 ### Return
+- result: number
 
-* **result (number)**: 시작 날짜와 종료 날짜 사이의 분 단위의 차이를 정수 형태로 반환합니다. 이 값은 두 날짜 사이의 전체 시간 차이를 분 단위로 표현하며, 시작 날짜가 종료 날짜보다 이전이면 양수, 이후면 음수로 나타납니다.
 
-이 함수는 `dayjs` 라이브러리를 사용하여 입력된 `startDate`와 `endDate` 사이의 분 차이를 계산합니다. 이 기능은 두 시간 사이의 간격을 분 단위로 계산해야 할 때 유용합니다.
+## diffWeek
 
-## dayjs.diffMonth 모듈
+### Parameters
+- startDate: date
+- endDate: date
 
-### Param
-
-* **startDate (date)**: 시작 날짜입니다. 날짜는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
-* **endDate (date)**: 종료 날짜입니다. 이 날짜도 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
 
 ### Return
+- result: number
 
-* **result (number)**: 시작 날짜와 종료 날짜 사이의 월 단위의 차이를 정수 형태로 반환합니다. 이 값은 두 날짜 사이의 전체 시간 차이를 월 단위로 표현하며, 시작 날짜가 종료 날짜보다 이전이면 양수, 이후면 음수로 나타납니다.
 
-이 함수는 `dayjs` 라이브러리를 사용하여 입력된 `startDate`와 `endDate` 사이의 월 차이를 계산합니다. 이 기능은 두 날짜 간의 월 차이를 알고자 할 때 유용합니다.
+## diffQuarter
 
-\
-\
-dayjs.diffQuarter 모듈
---------------------
+### Parameters
+- startDate: date
+- endDate: date
 
-### Param
-
-* **startDate (date)**: 시작 날짜입니다. 날짜는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
-* **endDate (date)**: 종료 날짜입니다. 이 날짜도 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
 
 ### Return
-
-* **result (number)**: 시작 날짜와 종료 날짜 사이의 분기(quarter) 단위의 차이를 정수 형태로 반환합니다. 이 값은 두 날짜 사이의 전체 시간 차이를 분기 단위로 표현하며, 시작 날짜가 종료 날짜보다 이전이면 양수, 이후면 음수로 나타납니다.
-
-이 함수는 `dayjs` 라이브러리를 사용하여 입력된 `startDate`와 `endDate` 사이의 분기 차이를 계산합니다. 이 기능은 두 날짜 간의 분기 차이를 알고자 할 때 유용합니다.
+- result: number
 
 
+## diffYear
 
-## dayjs.diffSecond 모듈
+### Parameters
+- startDate: date
+- endDate: date
 
-### Param
-
-* **startDate (date)**: 시작 날짜입니다. 날짜는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
-* **endDate (date)**: 종료 날짜입니다. 이 날짜도 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
 
 ### Return
+- result: number
 
-* **result (number)**: 시작 날짜와 종료 날짜 사이의 초(second) 단위의 차이를 정수 형태로 반환합니다. 이 값은 두 날짜 사이의 전체 시간 차이를 초 단위로 표현하며, 시작 날짜가 종료 날짜보다 이전이면 양수, 이후면 음수로 나타납니다.
 
-이 함수는 `dayjs` 라이브러리를 사용하여 입력된 `startDate`와 `endDate` 사이의 초 차이를 계산합니다. 이 기능은 두 날짜 간의 초 차이를 알고자 할 때 유용합니다.
+## diffMonth
 
-## dayjs.diffWeek 모듈
+### Parameters
+- startDate: date
+- endDate: date
 
-### Param
-
-* **startDate (date)**: 시작 날짜입니다. 날짜는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
-* **endDate (date)**: 종료 날짜입니다. 이 날짜도 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
 
 ### Return
+- result: number
 
-* **result (number)**: 시작 날짜와 종료 날짜 사이의 주(week) 단위의 차이를 정수 형태로 반환합니다. 이 값은 두 날짜 사이의 전체 주 차이를 표현하며, 시작 날짜가 종료 날짜보다 이전이면 양수, 이후면 음수로 나타납니다.
 
-이 함수는 `dayjs` 라이브러리를 사용하여 입력된 `startDate`와 `endDate` 사이의 주 차이를 계산합니다. 이 기능은 두 날짜 간의 주 차이를 알고자 할 때 유용합니다.
+## getDay
 
-\
-dayjs.diffYear 모듈
------------------
+### Parameters
+- date: date
 
-### Param
-
-* **startDate (date)**: 시작 날짜입니다. 날짜는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
-* **endDate (date)**: 종료 날짜입니다. 이 날짜도 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
 
 ### Return
+- result: number
 
-* **result (number)**: 시작 날짜와 종료 날짜 사이의 연(year) 단위의 차이를 정수 형태로 반환합니다. 이 값은 두 날짜 사이의 전체 연 차이를 표현하며, 시작 날짜가 종료 날짜보다 이전이면 양수, 이후면 음수로 나타납니다.
 
-이 함수는 `dayjs` 라이브러리를 사용하여 입력된 `startDate`와 `endDate` 사이의 연 차이를 계산합니다. 이 기능은 두 날짜 간의 연 차이를 알고자 할 때 유용합니다.
+## format
 
-## dayjs.format 모듈
+### Parameters
+- date: date
+- form: string
 
-### Param
-
-* **date (date)**: 파싱할 날짜 및 시간입니다. 날짜는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
-* **form (string)**: 날짜 및 시간을 특정 형식으로 포맷하는 데 사용되는 문자열입니다. dayjs의 포맷 문자열 규칙을 따라야 합니다.
 
 ### Return
+- result: string
 
-* **result (string)**: 지정된 형식에 따라 포맷된 날짜 및 시간을 나타내는 문자열입니다.
 
-이 함수는 `dayjs` 라이브러리를 사용하여 입력된 `date`를 지정된 형식에 따라 포맷합니다. `form` 매개변수에는 날짜 및 시간을 특정 형식으로 표시하기 위한 포맷 문자열이 제공되어야 합니다. 이 포맷 문자열은 dayjs의 포맷 규칙을 따라야 합니다. 만약 `date`가 제공되지 않으면 현재 날짜와 시간을 사용하여 포맷을 수행합니다.
+## getDate
 
-## dayjs.getDate 모듈
+### Parameters
+- date: date
 
-### Param
-
-* **date (date)**: 시간 단위 값을 구할 날짜 객체입니다. 날짜는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
 
 ### Return
+- result: number
 
-* **result (number)**: 날짜 객체에서 추출된 시간 단위 값입니다.
 
-이 함수는 `dayjs` 라이브러리를 사용하여 입력된 날짜 객체에서 원하는 시간 단위 값을 추출합니다. 입력된 날짜 객체는 `date` 매개변수로 제공되어야 하며, 날짜는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다. 추출된 값은 `result`로 반환됩니다.
+## getHour
 
-## dayjs.getHour 모듈
+### Parameters
+- date: date
 
-### Param:
 
-* `date` (`date`): 시간 단위 값을 구할 날짜 객체입니다. 날짜는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
+### Return
+- result: number
 
-### Return:
 
-* `result` (`number`): 날짜 객체에서 추출된 시간 단위 값입니다.
+## diffSecond
 
-이 함수는 dayjs 라이브러리를 사용하여 입력된 날짜 객체에서 원하는 시간 단위 값을 추출합니다. 입력된 날짜 객체는 `date` 매개변수로 제공되어야 하며, 날짜는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다. 추출된 값은 `result`로 반환됩니다.
+### Parameters
+- startDate: date
+- endDate: date
 
-## dayjs.getMillisecond 모듈
 
-### Param:
+### Return
+- result: number
 
-* `date` (`date`): 시간 단위 값을 구할 날짜 객체입니다. 날짜는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
 
-### Return:
+## getSecond
 
-* `result` (`number`): 날짜 객체에서 추출된 밀리초 값을 나타내는 숫자입니다.
+### Parameters
+- date: date
 
-이 함수는 dayjs 라이브러리를 사용하여 입력된 날짜 객체에서 원하는 시간 단위 값을 추출합니다. 입력된 날짜 객체는 `date` 매개변수로 제공되어야 하며, 이는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다. 추출된 값은 `result`로 반환되며, 이 값은 해당 날짜 객체의 밀리초 값을 나타냅니다.
 
-## dayjs.getMonth 모듈
+### Return
+- result: number
 
-### Param:
 
-* `date` (`date`): 시간 단위 값을 구할 날짜 객체입니다. 날짜는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
+## getMillisecond
 
-### Return:
+### Parameters
+- date: date
 
-* `result` (`number`): 날짜 객체에서 추출된 월 값을 나타내는 숫자입니다.
 
-이 함수는 dayjs 라이브러리를 사용하여 입력된 날짜 객체에서 원하는 시간 단위 값을 추출합니다. 입력된 날짜 객체는 `date` 매개변수로 제공되어야 하며, 이는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다. 추출된 값은 `result`로 반환되며, 이 값은 해당 날짜 객체의 월 값을 나타냅니다.
+### Return
+- result: number
 
-## dayjs.getSecond 모듈
 
-### Param:
+## isAfter
 
-* `date` (`date`): 시간 단위 값을 구할 날짜 객체입니다. 날짜는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
+### Parameters
+- startDate: date
+- endDate: date
 
-### Return:
 
-* `result` (`number`): 날짜 객체에서 추출된 초 값을 나타내는 숫자입니다.
+### Return
+- result: boolean
 
-이 함수는 dayjs 라이브러리를 사용하여 입력된 날짜 객체에서 원하는 시간 단위 값을 추출합니다. 입력된 날짜 객체는 `date` 매개변수로 제공되어야 하며, 이는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다. 추출된 값은 `result`로 반환되며, 이 값은 해당 날짜 객체의 초 값을 나타냅니다.
 
-## dayjs.getYear 모듈
+## isBefore
 
-### Param:
+### Parameters
+- startDate: date
+- endDate: date
 
-* `date` (`date`): 시간 단위 값을 구할 날짜 객체입니다. 날짜는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
 
-### Return:
+### Return
+- result: boolean
 
-* `result` (`number`): 날짜 객체에서 추출된 연도 값을 나타내는 숫자입니다.
 
-이 함수는 dayjs 라이브러리를 사용하여 입력된 날짜 객체에서 원하는 시간 단위 값을 추출합니다. 입력된 날짜 객체는 `date` 매개변수로 제공되어야 하며, 이는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다. 추출된 값은 `result`로 반환되며, 이 값은 해당 날짜 객체의 연도 값을 나타냅니다.
+## getYear
 
-\
-dayjs.isAfter 모듈
-----------------
+### Parameters
+- date: date
 
-### Param:
 
-* `startDate` (`date`): 비교할 시작 날짜 객체입니다. 시작 날짜는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
-* `endDate` (`date`): 비교할 종료 날짜 객체입니다. 종료 날짜는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
+### Return
+- result: number
 
-### Return:
 
-* `result` (`boolean`): 시작 날짜가 종료 날짜보다 이후인지 여부를 나타내는 불리언 값입니다.
+## getMonth
 
-이 함수는 dayjs 라이브러리를 사용하여 시작 날짜가 종료 날짜보다 이후인지 여부를 확인합니다. 입력된 시작 날짜와 종료 날짜는 각각 `startDate`와 `endDate` 매개변수로 제공되어야 하며, 이는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
+### Parameters
+- date: date
 
-이후인 경우 `true`가 반환되고, 그렇지 않은 경우 `false`가 반환됩니다.
 
-## dayjs.isBefore 모듈
+### Return
+- result: number
 
-### Param:
 
-* **startDate** (`date`): 비교할 시작 날짜 객체입니다. 시작 날짜는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
-* **endDate** (`date`): 비교할 종료 날짜 객체입니다. 종료 날짜는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
+## isBetween
 
-### Return:
+### Parameters
+- startDate: date
+- someDate: date
+- endDate: date
 
-* **result** (`boolean`): 시작 날짜가 종료 날짜보다 이전인지 여부를 나타내는 불리언 값입니다.
 
-이 함수는 dayjs 라이브러리를 사용하여 시작 날짜가 종료 날짜보다 이전인지 여부를 확인합니다. 입력된 시작 날짜와 종료 날짜는 각각 `startDate`와 `endDate` 매개변수로 제공되어야 하며, 이는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
+### Return
+- result: boolean
 
-이전인 경우 `true`가 반환되고, 그렇지 않은 경우 `false`가 반환됩니다.
 
-## dayjs.isSame 모듈
+## setDate
 
-### Param:
+### Parameters
+- date: date
+- value: number
 
-* **startDate (date)**: 비교할 첫 번째 날짜 객체입니다. 이 날짜는 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
-* **endDate (date)**: 비교할 두 번째 날짜 객체입니다. 이 날짜 역시 ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다.
 
-### Return:
+### Return
+- result: date
 
-* **result (boolean)**: 두 날짜가 같은 시점인지 여부를 나타내는 불리언 값입니다. 두 날짜가 같으면 true, 다르면 false를 반환합니다.
 
-이 함수는 `dayjs` 라이브러리를 사용하여 두 날짜가 동일한지 여부를 확인합니다. 입력된 `startDate`와 `endDate`는 각각 비교할 두 날짜로, ISO 8601 표준에 따른 문자열 형식으로 제공되어야 합니다. 이 함수는 주로 이벤트 발생 날짜나 특정 기간의 경계를 확인할 때 유용하게 사용됩니다.
+## isSame
 
-## dayjs.setDate 모듈
+### Parameters
+- startDate: date
+- endDate: date
 
-### Param:
 
-* **date (date)**: 변경할 날짜 객체입니다. 이 날짜는 ISO 8601 표준에 따른 문자열 형식이나 JavaScript의 Date 객체 형식으로 제공될 수 있습니다.
-* **value (number)**: 설정하고자 하는 일자의 숫자 값입니다. 이 값은 해당 월의 유효한 일자여야 합니다.
+### Return
+- result: boolean
 
-### Return:
 
-* **result (date)**: 일자가 변경된 새로운 날짜 객체입니다.
+## setHour
 
-이 함수는 주어진 날짜의 'date' 필드를 지정된 숫자 값으로 설정합니다. `dayjs` 라이브러리를 사용하여 날짜 조정이 수행됩니다.
+### Parameters
+- date: date
+- value: number
 
-***
 
-## dayjs.setDay 모듈
+### Return
+- result: date
 
-### Param:
 
-* **date (date)**: 변경할 날짜 객체입니다. 이 날짜는 ISO 8601 표준에 따른 문자열 형식이나 JavaScript의 Date 객체 형식으로 제공될 수 있습니다.
-* **value (number)**: 설정하고자 하는 요일의 숫자 값입니다. 이 값은 0(일요일)부터 6(토요일)까지의 범위에 있어야 합니다.
+## setDay
 
-### Return:
+### Parameters
+- date: date
+- value: number
 
-* **result (date)**: 요일이 변경된 새로운 날짜 객체입니다.
 
-이 함수는 주어진 날짜의 'day' 필드를 지정된 숫자 값으로 설정합니다. `dayjs` 라이브러리를 사용하여 날짜 조정이 수행됩니다. 이는 주로 주간 단위의 일정 조정이 필요할 때 유용하게 사용됩니다.
+### Return
+- result: date
 
-***
 
-## dayjs.setHour 모듈
+## setMinute
 
-### Param:
+### Parameters
+- date: date
+- value: number
 
-* **date (date)**: 변경할 날짜 객체입니다. 이 날짜는 ISO 8601 표준에 따른 문자열 형식이나 JavaScript의 Date 객체 형식으로 제공될 수 있습니다.
-* **value (number)**: 설정하고자 하는 시간의 숫자 값입니다. 이 값은 0부터 23까지의 범위에 있어야 합니다.
 
-### Return:
+### Return
+- result: date
 
-* **result (date)**: 시간이 변경된 새로운 날짜 객체입니다.
 
-이 함수는 주어진 날짜의 'hour' 필드를 지정된 숫자 값으로 설정합니다. `dayjs` 라이브러리를 사용하여 시간 조정이 수행됩니다. 이는 특히 시간 기반의 이벤트나 알람 설정에 유용하게 사용됩니다.
+## setYear
 
-***
+### Parameters
+- date: date
+- value: number
 
-## dayjs.setMillisecond 모듈
 
-### Param:
+### Return
+- result: date
 
-* **date (date)**: 변경할 날짜 객체입니다. 이 날짜는 ISO 8601 표준에 따른 문자열 형식이나 JavaScript의 Date 객체 형식으로 제공될 수 있습니다.
-* **value (number)**: 설정하고자 하는 밀리초의 숫자 값입니다. 이 값은 0부터 999까지의 범위에 있어야 합니다.
 
-### Return:
+## setMonth
 
-* **result (date)**: 밀리초가 변경된 새로운 날짜 객체입니다.
+### Parameters
+- date: date
+- value: number
 
-이 함수는 주어진 날짜의 'millisecond' 필드를 지정된 숫자 값으로 설정합니다. `dayjs` 라이브러리를 사용하여 밀리초 조정이 수행됩니다. 이는 고정밀 시간 처리에 유용하게 사용될 수 있습니다, 예를 들어 애니메이션 또는 시간 타임스탬프 데이터 처리 등에서 특히 유용합니다.
 
-***
+### Return
+- result: date
 
-## dayjs.setMinute 모듈
 
-### Param:
+## setSecond
 
-* **date (date)**: 변경할 날짜 객체입니다. 이 날짜는 ISO 8601 표준에 따른 문자열 형식이나 JavaScript의 Date 객체 형식으로 제공될 수 있습니다.
-* **value (number)**: 설정하고자 하는 분의 숫자 값입니다. 이 값은 0부터 59까지의 범위에 있어야 합니다.
+### Parameters
+- date: date
+- value: number
 
-### Return:
 
-* **result (date)**: 분이 변경된 새로운 날짜 객체입니다.
+### Return
+- result: date
 
-이 함수는 주어진 날짜의 'minute' 필드를 지정된 숫자 값으로 설정합니다. `dayjs` 라이브러리를 사용하여 분 조정이 수행됩니다. 이는 예를 들어, 특정 시간의 이벤트 또는 알람 설정에 특히 유용하게 사용될 수 있습니다.
 
-***
+## subtract
 
-## dayjs.setMonth 모듈
+### Parameters
+No Param
 
-### Param:
+### Return
+No Return
 
-* **date (date)**: 변경할 날짜 객체입니다. 이 날짜는 ISO 8601 표준에 따른 문자열 형식이나 JavaScript의 Date 객체 형식으로 제공될 수 있습니다.
-* **value (number)**: 설정하고자 하는 월의 숫자 값입니다. 이 값은 0(1월)부터 11(12월)까지의 범위에 있어야 합니다.
+## timeOther
 
-### Return:
+### Parameters
+- date: date
+- region: date
 
-* **result (date)**: 월이 변경된 새로운 날짜 객체입니다.
 
-이 함수는 주어진 날짜의 'month' 필드를 지정된 숫자 값으로 설정합니다. `dayjs` 라이브러리를 사용하여 월 조정이 수행됩니다. 이는 특히 금융 결산, 생일, 기념일, 또는 다가오는 이벤트를 위한 날짜 계산에 유용하게 사용됩니다.
+### Return
+- result: date
 
-***
 
-## dayjs.setSecond 모듈
+## timeAsiaSeoul
 
-### Param:
+### Parameters
+- date: date
 
-* **date (date)**: 변경할 날짜 객체입니다. 이 날짜는 ISO 8601 표준에 따른 문자열 형식이나 JavaScript의 Date 객체 형식으로 제공될 수 있습니다.
-* **value (number)**: 설정하고자 하는 초의 숫자 값입니다. 이 값은 0부터 59까지의 범위에 있어야 합니다.
 
-### Return:
+### Return
+- result: date
 
-* **result (date)**: 초가 변경된 새로운 날짜 객체입니다.
 
-이 함수는 주어진 날짜의 'second' 필드를 지정된 숫자 값으로 설정합니다. `dayjs` 라이브러리를 사용하여 초 조정이 수행됩니다. 이는 특히 시간 기반의 정밀한 이벤트 처리나 타이머 설정에 유용하게 사용됩니다.
+## setMillsecond
 
-***
+### Parameters
+- date: date
+- value: number
 
-## dayjs.setYear 모듈
 
-### Param:
+### Return
+- result: date
 
-* **date (date)**: 변경할 날짜 객체입니다. 이 날짜는 ISO 8601 표준에 따른 문자열 형식이나 JavaScript의 Date 객체 형식으로 제공될 수 있습니다.
-* **value (number)**: 설정하고자 하는 연도의 숫자 값입니다. 이 값은 일반적으로 네 자리 숫자로 표현됩니다 (예: 2024).
-
-### Return:
-
-* **result (date)**: 연도가 변경된 새로운 날짜 객체입니다.
-
-이 함수는 주어진 날짜의 'year' 필드를 지정된 숫자 값으로 설정합니다. `dayjs` 라이브러리를 사용하여 연도 조정이 수행됩니다. 이는 기념일이나 특별한 사건의 날짜를 계산할 때 유용하게 사용될 수 있습니다.
-
-***
-
-## dayjs.subtract 모듈
-
-### Param:
-
-* **date (string)**: 변경할 날짜의 문자열입니다. 이 값이 비어있는 경우 현재 날짜와 시간에서 시간을 빼게 됩니다.
-* **number (number)**: 빼고자 하는 시간 단위의 수치입니다.
-* **unit (string)**: 빼고자 하는 시간 단위입니다. 예를 들어, 'day', 'month', 'year' 등이 사용될 수 있습니다.
-
-### Return:
-
-* **result (string)**: 연산 후의 날짜를 ISO 8601 형식의 문자열로 반환합니다.
-
-이 함수는 `dayjs` 라이브러리를 사용하여 지정된 날짜에서 특정 시간 단위만큼을 빼고 그 결과를 문자열로 반환합니다. 만약 날짜가 제공되지 않으면 현재 날짜에서 시간을 빼는 연산을 수행합니다. 이 기능은 예정된 이벤트나 약속의 날짜를 조정할 때 유용하게 사용될 수 있습니다.
-
-***
-
-## dayjs.timeAsiaSeoul 모듈
-
-### Param:
-
-* **date (date)**: 변경할 날짜 객체입니다. 이 날짜는 ISO 8601 표준에 따른 문자열 형식이나 JavaScript의 Date 객체 형식으로 제공될 수 있습니다.
-
-### Return:
-
-* **result (date)**: 한국 서울 시간대로 변경된 날짜 객체입니다.
-
-이 함수는 `dayjs` 라이브러리와 `utc` 및 `timezone` 플러그인을 사용하여 주어진 날짜를 'Asia/Seoul' 시간대로 변경합니다. 날짜 객체가 문자열 형식이라면, `dayjs`를 사용하여 먼저 날짜 객체로 변환한 후 시간대를 적용합니다. 이 모듈은 국제적인 커뮤니케이션 또는 이벤트 관리에서 서울 시간에 맞추어 일정을 조정할 때 특히 유용합니다.
-
-***
-
-## dayjs.timeOther 모듈
-
-### Param:
-
-* **date (date)**: 변경할 날짜 객체입니다. 이 날짜는 ISO 8601 표준에 따른 문자열 형식이나 JavaScript의 Date 객체 형식으로 제공될 수 있습니다.
-* **region (string)**: 변경하고자 하는 시간대를 나타내는 문자열입니다. 예를 들어 'America/New\_York', 'Europe/Paris' 등과 같이 지정할 수 있습니다.
-
-### Return:
-
-* **result (date)**: 지정된 시간대로 변경된 날짜 객체입니다.
-
-이 함수는 `dayjs` 라이브러리와 `utc` 및 `timezone` 플러그인을 사용하여 주어진 날짜를 사용자가 지정한 시간대로 변경합니다. 날짜 객체가 문자열 형식이라면, `dayjs`를 사용하여 먼저 날짜 객체로 변환한 후 해당 시간대를 적용합니다. 이 모듈은 국제적인 커뮤니케이션, 회의 스케줄링, 또는 글로벌 이벤트 관리에서 다양한 지역 시간에 맞추어 일정을 조정할 때 유용하게 사용됩니다.
