@@ -1,16 +1,16 @@
-## sessionValidate
+## sessionConsume
 ### Parameters
-- verificationCode: string
 - key: string
+- verificationCode: string
 
 ### Return
 - result: boolean
 
 --------------------------------------------
-## sessionConsume
+## sessionValidate
 ### Parameters
-- key: string
 - verificationCode: string
+- key: string
 
 ### Return
 - result: boolean

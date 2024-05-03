@@ -1,11 +1,3 @@
-## dbUpdateManyCancel
-### Parameters
-- checkInId: Array<string>
-
-### Return
-- result: Array
-
---------------------------------------------
 ## dbUpdateCancel
 ### Parameters
 - checkInId: string
@@ -14,7 +6,7 @@
 - result: boolean
 
 --------------------------------------------
-## smsManyCancel
+## dbUpdateManyCancel
 ### Parameters
 - checkInId: Array<string>
 
@@ -28,5 +20,13 @@
 
 ### Return
 - result: boolean
+
+--------------------------------------------
+## smsManyCancel
+### Parameters
+- checkInId: Array<string>
+
+### Return
+- result: Array
 
 --------------------------------------------

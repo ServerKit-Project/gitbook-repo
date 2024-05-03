@@ -1,8 +1,11 @@
-## compareSync
+## hashSync
 ### Parameters
-No Param
+- data: string
+- salt: number
+
 ### Return
-No Return
+- result: string
+
 --------------------------------------------
 ## genSaltSync
 ### Parameters
@@ -12,12 +15,9 @@ No Return
 - result: string
 
 --------------------------------------------
-## hashSync
+## compareSync
 ### Parameters
-- data: string
-- salt: number
-
+- No Param
 ### Return
-- result: string
-
+- No Return
 --------------------------------------------

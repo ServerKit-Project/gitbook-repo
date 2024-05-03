@@ -1,3 +1,12 @@
+## toExponential
+### Parameters
+- number: number
+- fractionDigits: number
+
+### Return
+- result: string
+
+--------------------------------------------
 ## parseInt
 ### Parameters
 - string: string
@@ -9,18 +18,9 @@
 --------------------------------------------
 ## parseFloat
 ### Parameters
-No Param
+- No Param
 ### Return
 - result: number
-
---------------------------------------------
-## toExponential
-### Parameters
-- number: number
-- fractionDigits: number
-
-### Return
-- result: string
 
 --------------------------------------------
 ## toFixed

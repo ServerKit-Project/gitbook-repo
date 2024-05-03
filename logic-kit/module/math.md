@@ -1,11 +1,3 @@
-## ceil
-### Parameters
-- number: number
-
-### Return
-- result: number
-
---------------------------------------------
 ## abs
 ### Parameters
 - number: number
@@ -14,7 +6,7 @@
 - result: number
 
 --------------------------------------------
-## floor
+## ceil
 ### Parameters
 - number: number
 
@@ -30,11 +22,13 @@
 - result: number
 
 --------------------------------------------
-## random
+## floor
 ### Parameters
-No Param
+- number: number
+
 ### Return
-No Return
+- result: number
+
 --------------------------------------------
 ## min
 ### Parameters
@@ -52,6 +46,12 @@ No Return
 ### Return
 - result: number
 
+--------------------------------------------
+## random
+### Parameters
+- No Param
+### Return
+- No Return
 --------------------------------------------
 ## round
 ### Parameters

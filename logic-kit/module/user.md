@@ -1,16 +1,16 @@
-## getUserId
-### Parameters
-No Param
-### Return
-- userId: string
-
---------------------------------------------
 ## changePassword
 ### Parameters
 - permit: permit
 
 ### Return
 - result: boolean
+
+--------------------------------------------
+## getUserId
+### Parameters
+- No Param
+### Return
+- userId: string
 
 --------------------------------------------
 ## postCreateUserById

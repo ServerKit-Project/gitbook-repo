@@ -1,6 +1,6 @@
 ## crypto
 ### Parameters
-No Param
+- No Param
 ### Return
-No Return
+- No Return
 --------------------------------------------

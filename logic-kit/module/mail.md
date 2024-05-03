@@ -7,7 +7,7 @@
 - toMail: array (T)
 
 ### Return
-No Return
+- No Return
 --------------------------------------------
 ## manyTextSend
 ### Parameters
@@ -18,7 +18,7 @@ No Return
 - toMail: array (T)
 
 ### Return
-No Return
+- No Return
 --------------------------------------------
 ## oneHtmlSend
 ### Parameters
@@ -32,7 +32,7 @@ No Return
 - file: file
 
 ### Return
-No Return
+- No Return
 --------------------------------------------
 ## oneTextSend
 ### Parameters
@@ -46,5 +46,5 @@ No Return
 - file: file
 
 ### Return
-No Return
+- No Return
 --------------------------------------------

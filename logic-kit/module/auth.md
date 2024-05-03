@@ -1,23 +1,3 @@
-## createMFASession
-### Parameters
-- userGroupId: string
-- verificationCode: string
-- userId: string
-- TTL: number
-
-### Return
-- result: object
-
---------------------------------------------
-## signUp2faCheck
-### Parameters
-- verificationCode: string
-- phoneNumber: string
-
-### Return
-- result: boolean
-
---------------------------------------------
 ## signUp2faSave
 ### Parameters
 - phoneNumber: string
@@ -33,6 +13,26 @@
 - userGroupId: string
 - verificationCode: string
 - sessionId: string
+
+### Return
+- result: object
+
+--------------------------------------------
+## signUp2faCheck
+### Parameters
+- verificationCode: string
+- phoneNumber: string
+
+### Return
+- result: boolean
+
+--------------------------------------------
+## createMFASession
+### Parameters
+- userGroupId: string
+- verificationCode: string
+- userId: string
+- TTL: number
 
 ### Return
 - result: object

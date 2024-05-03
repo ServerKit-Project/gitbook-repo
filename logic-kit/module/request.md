@@ -1,6 +1,6 @@
 ## ip
 ### Parameters
-No Param
+- No Param
 ### Return
 - result: string
 

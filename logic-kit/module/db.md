@@ -1,12 +1,3 @@
-## delete
-### Parameters
-- database: database
-- query: queryObject
-
-### Return
-- result: number
-
---------------------------------------------
 ## deleteUser
 ### Parameters
 - userGroupId: string
@@ -16,26 +7,10 @@
 - result: number
 
 --------------------------------------------
-## getFind
+## getFindUser
 ### Parameters
-- database: database
-- query: queryObject
-- page: number
-- length: number
-- orderCreatedAt: number
-
-### Return
-- result: array (T)
-
---------------------------------------------
-## getFindAdv
-### Parameters
-- database: database
-- query: queryObject
-- page: number
-- length: number
-- orderCreatedAt: number
-- sort: object
+- userGroupId: string
+- userId: string
 
 ### Return
 - result: object
@@ -54,32 +29,13 @@
 - result: number
 
 --------------------------------------------
-## getFindUserSearchUserId
+## delete
 ### Parameters
-- userGroupId: string
-- word: string
+- database: database
+- query: queryObject
 
 ### Return
-- userId: string
-- userGroupId: string
-
---------------------------------------------
-## getFindUser
-### Parameters
-- userGroupId: string
-- userId: string
-
-### Return
-- result: object
-
---------------------------------------------
-## getUserByToken
-### Parameters
-- userGroupId: string
-- token: string
-
-### Return
-- result: object
+- result: number
 
 --------------------------------------------
 ## getFindUserSearch
@@ -93,6 +49,29 @@
 - result: totalUserData
 
 --------------------------------------------
+## getFindUserSearchUserId
+### Parameters
+- userGroupId: string
+- word: string
+
+### Return
+- userId: string
+- userGroupId: string
+
+--------------------------------------------
+## getFindAdv
+### Parameters
+- database: database
+- query: queryObject
+- page: number
+- length: number
+- orderCreatedAt: number
+- sort: object
+
+### Return
+- result: object
+
+--------------------------------------------
 ## postCreateBulkCSV
 ### Parameters
 - database: database
@@ -102,10 +81,19 @@
 - result: number
 
 --------------------------------------------
-## postCreateBulkXML
+## getUserByToken
+### Parameters
+- userGroupId: string
+- token: string
+
+### Return
+- result: object
+
+--------------------------------------------
+## postCreate
 ### Parameters
 - database: database
-- data: string
+- query: queryObject
 
 ### Return
 - result: number
@@ -120,10 +108,22 @@
 - result: number
 
 --------------------------------------------
-## postCreateMany
+## getFind
 ### Parameters
 - database: database
-- data: array (T)
+- query: queryObject
+- page: number
+- length: number
+- orderCreatedAt: number
+
+### Return
+- result: array (T)
+
+--------------------------------------------
+## postCreateBulkXML
+### Parameters
+- database: database
+- data: string
 
 ### Return
 - result: number
@@ -132,15 +132,6 @@
 ## postCreateUser
 ### Parameters
 - data: object
-
-### Return
-- result: number
-
---------------------------------------------
-## postCreate
-### Parameters
-- database: database
-- query: queryObject
 
 ### Return
 - result: number
@@ -156,16 +147,6 @@
 - result: number
 
 --------------------------------------------
-## updateCustomValue
-### Parameters
-- userGroupId: string
-- userId: string
-- keyValueObject: object
-
-### Return
-- result: object
-
---------------------------------------------
 ## putUpdateManyTime
 ### Parameters
 - database: database
@@ -176,11 +157,12 @@
 - action: action (T)
 
 ### Return
-No Return
+- No Return
 --------------------------------------------
-## putUpdateUser
+## postCreateMany
 ### Parameters
-- data: object
+- database: database
+- data: array (T)
 
 ### Return
 - result: number
@@ -195,5 +177,23 @@ No Return
 - action: action (T)
 
 ### Return
-No Return
+- No Return
+--------------------------------------------
+## putUpdateUser
+### Parameters
+- data: object
+
+### Return
+- result: number
+
+--------------------------------------------
+## updateCustomValue
+### Parameters
+- userGroupId: string
+- userId: string
+- keyValueObject: object
+
+### Return
+- result: object
+
 --------------------------------------------

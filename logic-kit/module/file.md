@@ -1,17 +1,17 @@
-## downloadURL
-### Parameters
-- file: file
-
-### Return
-- result: string
-
---------------------------------------------
 ## delete
 ### Parameters
 - file: array (T)
 
 ### Return
 - result: number
+
+--------------------------------------------
+## downloadURL
+### Parameters
+- file: file
+
+### Return
+- result: string
 
 --------------------------------------------
 ## getFileId
@@ -26,9 +26,15 @@
 --------------------------------------------
 ## getStream
 ### Parameters
-No Param
+- No Param
 ### Return
-No Return
+- No Return
+--------------------------------------------
+## imageResizeStream
+### Parameters
+- No Param
+### Return
+- No Return
 --------------------------------------------
 ## getMeta
 ### Parameters
@@ -37,12 +43,6 @@ No Return
 ### Return
 - result: object (T)
 
---------------------------------------------
-## imageResizeStream
-### Parameters
-No Param
-### Return
-No Return
 --------------------------------------------
 ## saveFile
 ### Parameters

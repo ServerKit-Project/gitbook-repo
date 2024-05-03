@@ -1,17 +1,17 @@
+## getFriday
+### Parameters
+- date: date
+
+### Return
+- result: date
+
+--------------------------------------------
 ## getDay
 ### Parameters
 - date: date
 
 ### Return
 - result: number
-
---------------------------------------------
-## getCron
-### Parameters
-- date: date
-
-### Return
-- result: string
 
 --------------------------------------------
 ## getDate
@@ -30,20 +30,20 @@
 - result: number
 
 --------------------------------------------
+## getOnlyDate
+### Parameters
+- date: date
+
+### Return
+- date: date
+
+--------------------------------------------
 ## getMilliseconds
 ### Parameters
 - date: date
 
 ### Return
 - result: number
-
---------------------------------------------
-## getFriday
-### Parameters
-- date: date
-
-### Return
-- result: date
 
 --------------------------------------------
 ## getFullYear
@@ -54,6 +54,14 @@
 - result: number
 
 --------------------------------------------
+## getCron
+### Parameters
+- date: date
+
+### Return
+- result: string
+
+--------------------------------------------
 ## getMinutes
 ### Parameters
 - date: date
@@ -62,18 +70,9 @@
 - result: number
 
 --------------------------------------------
-## getOnlyDate
+## newDate
 ### Parameters
-- date: date
-
-### Return
-- date: date
-
---------------------------------------------
-## setMinutes
-### Parameters
-- date: date
-- minutesValue: number
+- value: string
 
 ### Return
 - result: date
@@ -81,27 +80,9 @@
 --------------------------------------------
 ## nowDate
 ### Parameters
-No Param
+- No Param
 ### Return
-No Return
---------------------------------------------
-## setDate
-### Parameters
-- date: date
-- dateValue: number
-
-### Return
-- result: date
-
---------------------------------------------
-## setHours
-### Parameters
-- date: date
-- hoursValue: number
-
-### Return
-- result: date
-
+- No Return
 --------------------------------------------
 ## setMilliseconds
 ### Parameters
@@ -112,10 +93,10 @@ No Return
 - result: date
 
 --------------------------------------------
-## setSeconds
+## setMinutes
 ### Parameters
 - date: date
-- secondsValue: number
+- minutesValue: number
 
 ### Return
 - result: date
@@ -130,9 +111,19 @@ No Return
 - result: date
 
 --------------------------------------------
-## newDate
+## setDate
 ### Parameters
-- value: string
+- date: date
+- dateValue: number
+
+### Return
+- result: date
+
+--------------------------------------------
+## setSeconds
+### Parameters
+- date: date
+- secondsValue: number
 
 ### Return
 - result: date
@@ -142,6 +133,15 @@ No Return
 ### Parameters
 - date: date
 - yearValue: number
+
+### Return
+- result: date
+
+--------------------------------------------
+## setHours
+### Parameters
+- date: date
+- hoursValue: number
 
 ### Return
 - result: date
