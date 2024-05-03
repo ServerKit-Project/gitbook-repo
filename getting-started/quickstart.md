@@ -262,11 +262,11 @@ postCeate의 경우 콜백이 2개입니다. 성공일 경우 succese로 5번째
 
 
 
-테스트를 진행하기 위해 api 관리 탭으로 들어갑니다. ![](../.gitbook/assets/테스트1.png)
+테스트를 진행하기 위해 api 관리 탭으로 들어갑니다.&#x20;
+
+<figure><img src="../.gitbook/assets/테스트1.png" alt=""><figcaption></figcaption></figure>
 
 이전단계에서 작성한 api 를 선택합니다. 후 테스트 메뉴로 들어갑니다.
-
-<figure><img src="../.gitbook/assets/스크린샷 2024-04-25 오후 2.15.50.png" alt=""><figcaption><p>테스트 API 탭</p></figcaption></figure>
 
 배포한 api 가 잘 작동하는지 테스트를 할 수 있습니다.
 
@@ -275,6 +275,8 @@ postCeate의 경우 콜백이 2개입니다. 성공일 경우 succese로 5번째
 라우터에서 작성한 body 값을 입력후 API 테스트 시작 버튼을 클릭 합니다.&#x20;
 
 <figure><img src="../.gitbook/assets/테스트3.png" alt=""><figcaption></figcaption></figure>
+
+테스트가 성공했습니다.&#x20;
 
 데이터 구조 작성(스킴키트) 부터 로직러너(api 테스트)까지 전반적인 기능을 이용해서 게시글을 작성해 보았습니다.
 
