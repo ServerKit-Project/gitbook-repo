@@ -1,25 +1,17 @@
-## abs
-### Parameters
-- number: number
-
-### Return
-- - result: number
-
---------------------------------------------
 ## ceil
 ### Parameters
 - number: number
 
 ### Return
-- - result: number
+- result: number
 
 --------------------------------------------
-## min
+## abs
 ### Parameters
 - number: number
 
 ### Return
-- - result: number
+- result: number
 
 --------------------------------------------
 ## floor
@@ -27,7 +19,15 @@
 - number: number
 
 ### Return
-- - result: number
+- result: number
+
+--------------------------------------------
+## max
+### Parameters
+- number: number
+
+### Return
+- result: number
 
 --------------------------------------------
 ## pow
@@ -36,7 +36,37 @@
 - exponent: number
 
 ### Return
-- - result: number
+- result: number
+
+--------------------------------------------
+## random
+### Parameters
+No Param
+### Return
+No Return
+--------------------------------------------
+## round
+### Parameters
+- number: number
+
+### Return
+- result: number
+
+--------------------------------------------
+## min
+### Parameters
+- number: number
+
+### Return
+- result: number
+
+--------------------------------------------
+## ceil
+### Parameters
+- number: number
+
+### Return
+- result: number
 
 --------------------------------------------
 ## max
@@ -44,7 +74,40 @@
 - number: number
 
 ### Return
-- - result: number
+- result: number
+
+--------------------------------------------
+## abs
+### Parameters
+- number: number
+
+### Return
+- result: number
+
+--------------------------------------------
+## floor
+### Parameters
+- number: number
+
+### Return
+- result: number
+
+--------------------------------------------
+## min
+### Parameters
+- number: number
+
+### Return
+- result: number
+
+--------------------------------------------
+## pow
+### Parameters
+- base: number
+- exponent: number
+
+### Return
+- result: number
 
 --------------------------------------------
 ## round
@@ -52,12 +115,12 @@
 - number: number
 
 ### Return
-- - result: number
+- result: number
 
 --------------------------------------------
 ## random
 ### Parameters
 No Param
 ### Return
-- No Return
+No Return
 --------------------------------------------

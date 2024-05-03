@@ -3,6 +3,14 @@
 - value: T
 
 ### Return
-- - result: boolean
+- result: boolean
+
+--------------------------------------------
+## nullCheck
+### Parameters
+- value: T
+
+### Return
+- result: boolean
 
 --------------------------------------------

@@ -3,7 +3,7 @@
 - csv: string
 
 ### Return
-- - result: array (T)
+- result: array (T)
 
 --------------------------------------------
 ## excelToCSV
@@ -11,6 +11,22 @@
 - file: file
 
 ### Return
-- - result: string
+- result: string
+
+--------------------------------------------
+## csvToJSON
+### Parameters
+- csv: string
+
+### Return
+- result: array (T)
+
+--------------------------------------------
+## excelToCSV
+### Parameters
+- file: file
+
+### Return
+- result: string
 
 --------------------------------------------

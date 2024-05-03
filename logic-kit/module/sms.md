@@ -1,22 +1,3 @@
-## naverTimestamp
-### Parameters
-No Param
-### Return
-- - result: string
-
---------------------------------------------
-## naverSignature
-### Parameters
-- method: string
-- url: string
-- timestamp: string
-- accessKey: string
-- secretKey: string
-
-### Return
-- - result: string
-
---------------------------------------------
 ## naver
 ### Parameters
 - serviceId: string
@@ -28,7 +9,26 @@ No Param
 - timestamp: string
 
 ### Return
-- - result: object
+- result: object
+
+--------------------------------------------
+## naverSignature
+### Parameters
+- method: string
+- url: string
+- timestamp: string
+- accessKey: string
+- secretKey: string
+
+### Return
+- result: string
+
+--------------------------------------------
+## naverTimestamp
+### Parameters
+No Param
+### Return
+- result: string
 
 --------------------------------------------
 ## sejongtelecomMany
@@ -37,7 +37,7 @@ No Param
 - contents: Array<string>
 
 ### Return
-- - result: Array<string>
+- result: Array<string>
 
 --------------------------------------------
 ## sejongtelecom
@@ -52,7 +52,7 @@ No Param
 - title: string
 
 ### Return
-- - result: number
+- result: number
 
 --------------------------------------------
 ## sejongtelecomManyTime
@@ -61,7 +61,7 @@ No Param
 - contents: Array<string>
 
 ### Return
-- No Return
+No Return
 --------------------------------------------
 ## sejongtelecomTime
 ### Parameters
@@ -77,5 +77,86 @@ No Param
 - checkInId: string
 
 ### Return
-- No Return
+No Return
+--------------------------------------------
+## naverSignature
+### Parameters
+- method: string
+- url: string
+- timestamp: string
+- accessKey: string
+- secretKey: string
+
+### Return
+- result: string
+
+--------------------------------------------
+## naver
+### Parameters
+- serviceId: string
+- from: string
+- content: string
+- to: string
+- accessKey: string
+- signature: string
+- timestamp: string
+
+### Return
+- result: object
+
+--------------------------------------------
+## naverTimestamp
+### Parameters
+No Param
+### Return
+- result: string
+
+--------------------------------------------
+## sejongtelecom
+### Parameters
+- callback: string
+- contents: string
+- receiverTelNo: string
+- userKey: string
+- resellerCode: string
+- sejongApiKey: string
+- url: string
+- title: string
+
+### Return
+- result: number
+
+--------------------------------------------
+## sejongtelecomMany
+### Parameters
+- callback: string
+- contents: Array<string>
+
+### Return
+- result: Array<string>
+
+--------------------------------------------
+## sejongtelecomManyTime
+### Parameters
+- callback: string
+- contents: Array<string>
+
+### Return
+No Return
+--------------------------------------------
+## sejongtelecomTime
+### Parameters
+- callback: string
+- contents: string
+- receiverTelNo: string
+- userKey: string
+- resellerCode: string
+- sejongApiKey: string
+- url: string
+- time: date
+- title: string
+- checkInId: string
+
+### Return
+No Return
 --------------------------------------------

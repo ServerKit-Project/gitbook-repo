@@ -3,5 +3,12 @@
 - data: T
 
 ### Return
-- No Return
+No Return
+--------------------------------------------
+## log
+### Parameters
+- data: T
+
+### Return
+No Return
 --------------------------------------------

@@ -7,7 +7,7 @@
 - toMail: array (T)
 
 ### Return
-- No Return
+No Return
 --------------------------------------------
 ## manyTextSend
 ### Parameters
@@ -18,7 +18,7 @@
 - toMail: array (T)
 
 ### Return
-- No Return
+No Return
 --------------------------------------------
 ## oneHtmlSend
 ### Parameters
@@ -32,7 +32,7 @@
 - file: file
 
 ### Return
-- No Return
+No Return
 --------------------------------------------
 ## oneTextSend
 ### Parameters
@@ -46,5 +46,55 @@
 - file: file
 
 ### Return
-- No Return
+No Return
+--------------------------------------------
+## oneHtmlSend
+### Parameters
+- fromMail: string
+- password: string
+- host: string
+- port: number
+- toMail: string
+- title: string
+- html: string
+- file: file
+
+### Return
+No Return
+--------------------------------------------
+## oneTextSend
+### Parameters
+- fromMail: string
+- password: string
+- host: string
+- port: number
+- toMail: string
+- title: string
+- text: string
+- file: file
+
+### Return
+No Return
+--------------------------------------------
+## manyHtmlSend 
+### Parameters
+- fromMail: string
+- password: string
+- host: string
+- port: number
+- toMail: array (T)
+
+### Return
+No Return
+--------------------------------------------
+## manyTextSend
+### Parameters
+- fromMail: string
+- password: string
+- host: string
+- port: number
+- toMail: array (T)
+
+### Return
+No Return
 --------------------------------------------

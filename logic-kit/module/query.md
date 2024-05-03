@@ -3,6 +3,14 @@
 - query: queryObject
 
 ### Return
-- - result: queryObject
+- result: queryObject
+
+--------------------------------------------
+## deleteNull
+### Parameters
+- query: queryObject
+
+### Return
+- result: queryObject
 
 --------------------------------------------

@@ -3,15 +3,7 @@
 - file: array (T)
 
 ### Return
-- - result: number
-
---------------------------------------------
-## downloadURL
-### Parameters
-- file: file
-
-### Return
-- - result: string
+- result: number
 
 --------------------------------------------
 ## getFileId
@@ -21,34 +13,96 @@
 - length: number
 
 ### Return
-- - result: array (T)
+- result: array (T)
 
 --------------------------------------------
-## getStream
+## downloadURL
 ### Parameters
-No Param
+- file: file
+
 ### Return
-- No Return
+- result: string
+
 --------------------------------------------
 ## getMeta
 ### Parameters
 - file: file
 
 ### Return
-- - result: object (T)
+- result: object (T)
 
 --------------------------------------------
 ## imageResizeStream
 ### Parameters
 No Param
 ### Return
-- No Return
+No Return
+--------------------------------------------
+## getStream
+### Parameters
+No Param
+### Return
+No Return
 --------------------------------------------
 ## saveFile
 ### Parameters
 - fileList: array (T)
 
 ### Return
-- - result: number
+- result: number
 
+--------------------------------------------
+## delete
+### Parameters
+- file: array (T)
+
+### Return
+- result: number
+
+--------------------------------------------
+## getFileId
+### Parameters
+- query: queryObject
+- page: number
+- length: number
+
+### Return
+- result: array (T)
+
+--------------------------------------------
+## downloadURL
+### Parameters
+- file: file
+
+### Return
+- result: string
+
+--------------------------------------------
+## getStream
+### Parameters
+No Param
+### Return
+No Return
+--------------------------------------------
+## saveFile
+### Parameters
+- fileList: array (T)
+
+### Return
+- result: number
+
+--------------------------------------------
+## getMeta
+### Parameters
+- file: file
+
+### Return
+- result: object (T)
+
+--------------------------------------------
+## imageResizeStream
+### Parameters
+No Param
+### Return
+No Return
 --------------------------------------------

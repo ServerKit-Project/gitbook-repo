@@ -1,10 +1,16 @@
+## endsWith
+### Parameters
+No Param
+### Return
+No Return
+--------------------------------------------
 ## charAt
 ### Parameters
 - string: string
 - index: number
 
 ### Return
-- - result: string
+- result: string
 
 --------------------------------------------
 ## includes
@@ -14,20 +20,38 @@
 - startIndex: number
 
 ### Return
-- - result: boolean
+- result: boolean
 
---------------------------------------------
-## endsWith
-### Parameters
-No Param
-### Return
-- No Return
 --------------------------------------------
 ## lastIndexOf
 ### Parameters
 No Param
 ### Return
-- No Return
+No Return
+--------------------------------------------
+## length
+### Parameters
+No Param
+### Return
+No Return
+--------------------------------------------
+## localeCompare
+### Parameters
+- referenceString: string
+- compareString: string
+
+### Return
+- result: number
+
+--------------------------------------------
+## regExpTest
+### Parameters
+- string: string
+- regex: string
+
+### Return
+- result: boolean
+
 --------------------------------------------
 ## indexOf
 ### Parameters
@@ -36,22 +60,7 @@ No Param
 - position: number
 
 ### Return
-- - result: number
-
---------------------------------------------
-## length
-### Parameters
-No Param
-### Return
-- No Return
---------------------------------------------
-## repeat
-### Parameters
-- string: string
-- count: number
-
-### Return
-- - result: string
+- result: number
 
 --------------------------------------------
 ## plus
@@ -60,35 +69,7 @@ No Param
 - plus string: string
 
 ### Return
-- - result: string
-
---------------------------------------------
-## replace
-### Parameters
-- string: string
-- from: string
-- to: string
-
-### Return
-- No Return
---------------------------------------------
-## localeCompare
-### Parameters
-- referenceString: string
-- compareString: string
-
-### Return
-- - result: number
-
---------------------------------------------
-## startsWith
-### Parameters
-- string: string
-- searchString: string
-- position: number
-
-### Return
-- - result: boolean
+- result: string
 
 --------------------------------------------
 ## split
@@ -97,7 +78,7 @@ No Param
 - separator: string
 
 ### Return
-- - result: Array<string>
+- result: Array<string>
 
 --------------------------------------------
 ## replaceAll
@@ -107,7 +88,43 @@ No Param
 - to: string
 
 ### Return
-- - result: string
+- result: string
+
+--------------------------------------------
+## startsWith
+### Parameters
+- string: string
+- searchString: string
+- position: number
+
+### Return
+- result: boolean
+
+--------------------------------------------
+## repeat
+### Parameters
+- string: string
+- count: number
+
+### Return
+- result: string
+
+--------------------------------------------
+## replace
+### Parameters
+- string: string
+- from: string
+- to: string
+
+### Return
+No Return
+--------------------------------------------
+## toString
+### Parameters
+- data: T
+
+### Return
+- result: string
 
 --------------------------------------------
 ## toUpperCase
@@ -115,15 +132,7 @@ No Param
 - string: string
 
 ### Return
-- - result: string
-
---------------------------------------------
-## trim
-### Parameters
-- string: string
-
-### Return
-- - result: string
+- result: string
 
 --------------------------------------------
 ## toLowerCase
@@ -131,16 +140,15 @@ No Param
 - string: string
 
 ### Return
-- - result: string
+- result: string
 
 --------------------------------------------
-## regExpTest
+## trim
 ### Parameters
 - string: string
-- regex: string
 
 ### Return
-- - result: boolean
+- result: string
 
 --------------------------------------------
 ## stringify
@@ -148,7 +156,152 @@ No Param
 - object: object
 
 ### Return
-- - result: string
+- result: string
+
+--------------------------------------------
+## endsWith
+### Parameters
+No Param
+### Return
+No Return
+--------------------------------------------
+## includes
+### Parameters
+- string: string
+- searchString: string
+- startIndex: number
+
+### Return
+- result: boolean
+
+--------------------------------------------
+## length
+### Parameters
+No Param
+### Return
+No Return
+--------------------------------------------
+## charAt
+### Parameters
+- string: string
+- index: number
+
+### Return
+- result: string
+
+--------------------------------------------
+## localeCompare
+### Parameters
+- referenceString: string
+- compareString: string
+
+### Return
+- result: number
+
+--------------------------------------------
+## indexOf
+### Parameters
+- string: string
+- searchString: string
+- position: number
+
+### Return
+- result: number
+
+--------------------------------------------
+## plus
+### Parameters
+- string: string
+- plus string: string
+
+### Return
+- result: string
+
+--------------------------------------------
+## lastIndexOf
+### Parameters
+No Param
+### Return
+No Return
+--------------------------------------------
+## regExpTest
+### Parameters
+- string: string
+- regex: string
+
+### Return
+- result: boolean
+
+--------------------------------------------
+## repeat
+### Parameters
+- string: string
+- count: number
+
+### Return
+- result: string
+
+--------------------------------------------
+## replace
+### Parameters
+- string: string
+- from: string
+- to: string
+
+### Return
+No Return
+--------------------------------------------
+## replaceAll
+### Parameters
+- string: string
+- from: string
+- to: string
+
+### Return
+- result: string
+
+--------------------------------------------
+## startsWith
+### Parameters
+- string: string
+- searchString: string
+- position: number
+
+### Return
+- result: boolean
+
+--------------------------------------------
+## split
+### Parameters
+- string: string
+- separator: string
+
+### Return
+- result: Array<string>
+
+--------------------------------------------
+## stringify
+### Parameters
+- object: object
+
+### Return
+- result: string
+
+--------------------------------------------
+## toLowerCase
+### Parameters
+- string: string
+
+### Return
+- result: string
+
+--------------------------------------------
+## trim
+### Parameters
+- string: string
+
+### Return
+- result: string
 
 --------------------------------------------
 ## toString
@@ -156,6 +309,14 @@ No Param
 - data: T
 
 ### Return
-- - result: string
+- result: string
+
+--------------------------------------------
+## toUpperCase
+### Parameters
+- string: string
+
+### Return
+- result: string
 
 --------------------------------------------

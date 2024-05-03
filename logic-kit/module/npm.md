@@ -1,8 +1,11 @@
 ## node_schedule
 ### Parameters
-No Param
+- day: string
+- code: T
+
 ### Return
-- No Return
+- result: string
+
 --------------------------------------------
 ## axios
 ### Parameters
@@ -13,7 +16,31 @@ No Param
 - headers: object
 
 ### Return
-- - result: object
+- result: object
+
+--------------------------------------------
+## node_schedule
+### Parameters
+No Param
+### Return
+No Return
+--------------------------------------------
+## node_schedule
+### Parameters
+No Param
+### Return
+No Return
+--------------------------------------------
+## axios
+### Parameters
+- method: string
+- url: string
+- data: object
+- params: object
+- headers: object
+
+### Return
+- result: object
 
 --------------------------------------------
 ## node_schedule
@@ -22,6 +49,6 @@ No Param
 - code: T
 
 ### Return
-- - result: string
+- result: string
 
 --------------------------------------------
