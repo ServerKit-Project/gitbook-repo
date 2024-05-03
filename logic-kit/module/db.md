@@ -1,28 +1,13 @@
-
-## deleteUser
-
-### Parameters
-- userGroupId: string
-- userId: string
-
-
-### Return
-- result: number
-
-
 ## delete
-
 ### Parameters
 - database: database
 - query: queryObject
 
-
 ### Return
-- result: number
+- - result: number
 
-
+--------------------------------------------
 ## getFind
-
 ### Parameters
 - database: database
 - query: queryObject
@@ -30,13 +15,11 @@
 - length: number
 - orderCreatedAt: number
 
-
 ### Return
-- result: array (T)
+- - result: array (T)
 
-
+--------------------------------------------
 ## getFindAdv
-
 ### Parameters
 - database: database
 - query: queryObject
@@ -45,140 +28,127 @@
 - orderCreatedAt: number
 - sort: object
 
-
 ### Return
-- result: object
+- - result: object
 
-
-## getFindCount
-
-### Parameters
-- database: database
-- query: queryObject
-- page: number
-- length: number
-- orderCreatedAt: number
-- sort: object
-
-
-### Return
-- result: number
-
-
-## getUserByToken
-
-### Parameters
-- userGroupId: string
-- token: string
-
-
-### Return
-- result: object
-
-
-## getFindUser
-
+--------------------------------------------
+## deleteUser
 ### Parameters
 - userGroupId: string
 - userId: string
 
+### Return
+- - result: number
+
+--------------------------------------------
+## getFindCount
+### Parameters
+- database: database
+- query: queryObject
+- page: number
+- length: number
+- orderCreatedAt: number
+- sort: object
 
 ### Return
-- result: object
+- - result: number
 
+--------------------------------------------
+## getFindUser
+### Parameters
+- userGroupId: string
+- userId: string
 
+### Return
+- - result: object
+
+--------------------------------------------
+## postCreate
+### Parameters
+- database: database
+- query: queryObject
+
+### Return
+- - result: number
+
+--------------------------------------------
 ## getFindUserSearch
-
 ### Parameters
 - userGroupId: string
 - word: string
 - pageNumber: number
 - pageSize: number
 
+### Return
+- - result: totalUserData
+
+--------------------------------------------
+## postCreateBulkJSON
+### Parameters
+- database: database
+- data: string
 
 ### Return
-- result: totalUserData
+- - result: number
 
+--------------------------------------------
+## postCreateBulkCSV
+### Parameters
+- database: database
+- data: string
 
+### Return
+- - result: number
+
+--------------------------------------------
+## putUpdate
+### Parameters
+- database: database
+- query: queryObject
+- action: action (T)
+
+### Return
+- - result: number
+
+--------------------------------------------
 ## getFindUserSearchUserId
-
 ### Parameters
 - userGroupId: string
 - word: string
 
-
 ### Return
-- userId: string
+- - userId: string
 - userGroupId: string
 
-
-## postCreate
-
+--------------------------------------------
+## postCreateBulkXML
 ### Parameters
 - database: database
-- query: queryObject
-
+- data: string
 
 ### Return
-- result: number
+- - result: number
 
-
+--------------------------------------------
 ## postCreateMany
-
 ### Parameters
 - database: database
 - data: array (T)
 
-
 ### Return
-- result: number
+- - result: number
 
-
-## postCreateBulkCSV
-
+--------------------------------------------
+## getUserByToken
 ### Parameters
-- database: database
-- data: string
-
-
-### Return
-- result: number
-
-
-## postCreateBulkJSON
-
-### Parameters
-- database: database
-- data: string
-
+- userGroupId: string
+- token: string
 
 ### Return
-- result: number
+- - result: object
 
-
-## postCreateUser
-
-### Parameters
-- data: object
-
-
-### Return
-- result: number
-
-
-## postCreateBulkXML
-
-### Parameters
-- database: database
-- data: string
-
-
-### Return
-- result: number
-
-
+--------------------------------------------
 ## putUpdateManyTime
-
 ### Parameters
 - database: database
 - query: queryObject
@@ -187,12 +157,18 @@
 - value: Array<string>
 - action: action (T)
 
+### Return
+- No Return
+--------------------------------------------
+## postCreateUser
+### Parameters
+- data: object
 
 ### Return
-No Return
+- - result: number
 
+--------------------------------------------
 ## putUpdateTime
-
 ### Parameters
 - database: database
 - query: queryObject
@@ -200,40 +176,24 @@ No Return
 - checkInId: string
 - action: action (T)
 
-
 ### Return
-No Return
-
+- No Return
+--------------------------------------------
 ## putUpdateUser
-
 ### Parameters
 - data: object
 
-
 ### Return
-- result: number
+- - result: number
 
-
+--------------------------------------------
 ## updateCustomValue
-
 ### Parameters
 - userGroupId: string
 - userId: string
 - keyValueObject: object
 
-
 ### Return
-- result: object
+- - result: object
 
-
-## putUpdate
-
-### Parameters
-- database: database
-- query: queryObject
-- action: action (T)
-
-
-### Return
-- result: number
-
+--------------------------------------------

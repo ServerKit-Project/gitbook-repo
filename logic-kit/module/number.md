@@ -1,42 +1,34 @@
-
 ## parseFloat
-
 ### Parameters
 No Param
-
 ### Return
-- result: number
+- - result: number
 
-
+--------------------------------------------
 ## parseInt
-
 ### Parameters
 - string: string
 - radix: number
 
-
 ### Return
-- result: number
+- - result: number
 
-
+--------------------------------------------
 ## toExponential
-
 ### Parameters
 - number: number
 - fractionDigits: number
 
-
 ### Return
-- result: string
+- - result: string
 
-
+--------------------------------------------
 ## toFixed
-
 ### Parameters
 - number: number
 - digits: number
 
-
 ### Return
-- result: string
+- - result: string
 
+--------------------------------------------

@@ -1,26 +1,11 @@
-
 ## naverTimestamp
-
 ### Parameters
 No Param
-
 ### Return
-- result: string
+- - result: string
 
-
-## sejongtelecomMany
-
-### Parameters
-- callback: string
-- contents: Array<string>
-
-
-### Return
-- result: Array<string>
-
-
+--------------------------------------------
 ## naverSignature
-
 ### Parameters
 - method: string
 - url: string
@@ -28,13 +13,57 @@ No Param
 - accessKey: string
 - secretKey: string
 
+### Return
+- - result: string
+
+--------------------------------------------
+## naver
+### Parameters
+- serviceId: string
+- from: string
+- content: string
+- to: string
+- accessKey: string
+- signature: string
+- timestamp: string
 
 ### Return
-- result: string
+- - result: object
 
+--------------------------------------------
+## sejongtelecomMany
+### Parameters
+- callback: string
+- contents: Array<string>
 
+### Return
+- - result: Array<string>
+
+--------------------------------------------
+## sejongtelecom
+### Parameters
+- callback: string
+- contents: string
+- receiverTelNo: string
+- userKey: string
+- resellerCode: string
+- sejongApiKey: string
+- url: string
+- title: string
+
+### Return
+- - result: number
+
+--------------------------------------------
+## sejongtelecomManyTime
+### Parameters
+- callback: string
+- contents: Array<string>
+
+### Return
+- No Return
+--------------------------------------------
 ## sejongtelecomTime
-
 ### Parameters
 - callback: string
 - contents: string
@@ -47,49 +76,6 @@ No Param
 - title: string
 - checkInId: string
 
-
 ### Return
-No Return
-
-## sejongtelecomManyTime
-
-### Parameters
-- callback: string
-- contents: Array<string>
-
-
-### Return
-No Return
-
-## sejongtelecom
-
-### Parameters
-- callback: string
-- contents: string
-- receiverTelNo: string
-- userKey: string
-- resellerCode: string
-- sejongApiKey: string
-- url: string
-- title: string
-
-
-### Return
-- result: number
-
-
-## naver
-
-### Parameters
-- serviceId: string
-- from: string
-- content: string
-- to: string
-- accessKey: string
-- signature: string
-- timestamp: string
-
-
-### Return
-- result: object
-
+- No Return
+--------------------------------------------

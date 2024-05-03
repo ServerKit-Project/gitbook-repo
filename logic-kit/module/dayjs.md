@@ -1,360 +1,292 @@
-
 ## add
-
 ### Parameters
 No Param
-
 ### Return
-No Return
-
+- No Return
+--------------------------------------------
 ## dayjs
-
 ### Parameters
 - date: string
 
-
 ### Return
-- result: date
+- - result: date
 
-
-## diffDay
-
-### Parameters
-- startDate: date
-- endDate: date
-
-
-### Return
-- result: number
-
-
+--------------------------------------------
 ## diffHour
-
 ### Parameters
 - startDate: date
 - endDate: date
 
+### Return
+- - result: number
+
+--------------------------------------------
+## diffDay
+### Parameters
+- startDate: date
+- endDate: date
 
 ### Return
-- result: number
+- - result: number
 
-
+--------------------------------------------
 ## diffMinute
-
 ### Parameters
 - startDate: date
 - endDate: date
 
-
 ### Return
-- result: number
+- - result: number
 
-
-## diffMillisecond
-
-### Parameters
-- startDate: date
-- endDate: date
-
-
-### Return
-- result: number
-
-
-## diffWeek
-
-### Parameters
-- startDate: date
-- endDate: date
-
-
-### Return
-- result: number
-
-
+--------------------------------------------
 ## diffQuarter
-
 ### Parameters
 - startDate: date
 - endDate: date
 
-
 ### Return
-- result: number
+- - result: number
 
-
-## diffYear
-
+--------------------------------------------
+## diffMillisecond
 ### Parameters
 - startDate: date
 - endDate: date
 
-
 ### Return
-- result: number
+- - result: number
 
-
+--------------------------------------------
 ## diffMonth
-
 ### Parameters
 - startDate: date
 - endDate: date
 
-
 ### Return
-- result: number
+- - result: number
 
-
-## getDay
-
+--------------------------------------------
+## diffSecond
 ### Parameters
-- date: date
-
+- startDate: date
+- endDate: date
 
 ### Return
-- result: number
+- - result: number
 
-
+--------------------------------------------
 ## format
-
 ### Parameters
 - date: date
 - form: string
 
-
 ### Return
-- result: string
+- - result: string
 
-
-## getDate
-
-### Parameters
-- date: date
-
-
-### Return
-- result: number
-
-
+--------------------------------------------
 ## getHour
-
 ### Parameters
 - date: date
 
-
 ### Return
-- result: number
+- - result: number
 
-
-## diffSecond
-
+--------------------------------------------
+## diffWeek
 ### Parameters
 - startDate: date
 - endDate: date
 
-
 ### Return
-- result: number
+- - result: number
 
-
-## getSecond
-
+--------------------------------------------
+## getDate
 ### Parameters
 - date: date
 
-
 ### Return
-- result: number
+- - result: number
 
-
-## getMillisecond
-
-### Parameters
-- date: date
-
-
-### Return
-- result: number
-
-
-## isAfter
-
+--------------------------------------------
+## diffYear
 ### Parameters
 - startDate: date
 - endDate: date
 
-
 ### Return
-- result: boolean
+- - result: number
 
-
-## isBefore
-
-### Parameters
-- startDate: date
-- endDate: date
-
-
-### Return
-- result: boolean
-
-
-## getYear
-
-### Parameters
-- date: date
-
-
-### Return
-- result: number
-
-
+--------------------------------------------
 ## getMonth
-
 ### Parameters
 - date: date
 
+### Return
+- - result: number
+
+--------------------------------------------
+## getYear
+### Parameters
+- date: date
 
 ### Return
-- result: number
+- - result: number
 
+--------------------------------------------
+## getMillisecond
+### Parameters
+- date: date
 
+### Return
+- - result: number
+
+--------------------------------------------
+## isAfter
+### Parameters
+- startDate: date
+- endDate: date
+
+### Return
+- - result: boolean
+
+--------------------------------------------
+## isBefore
+### Parameters
+- startDate: date
+- endDate: date
+
+### Return
+- - result: boolean
+
+--------------------------------------------
+## getDay
+### Parameters
+- date: date
+
+### Return
+- - result: number
+
+--------------------------------------------
+## getSecond
+### Parameters
+- date: date
+
+### Return
+- - result: number
+
+--------------------------------------------
+## isSame
+### Parameters
+- startDate: date
+- endDate: date
+
+### Return
+- - result: boolean
+
+--------------------------------------------
 ## isBetween
-
 ### Parameters
 - startDate: date
 - someDate: date
 - endDate: date
 
-
 ### Return
-- result: boolean
+- - result: boolean
 
-
+--------------------------------------------
 ## setDate
-
 ### Parameters
 - date: date
 - value: number
 
-
 ### Return
-- result: date
+- - result: date
 
-
-## isSame
-
-### Parameters
-- startDate: date
-- endDate: date
-
-
-### Return
-- result: boolean
-
-
+--------------------------------------------
 ## setHour
-
 ### Parameters
 - date: date
 - value: number
 
-
 ### Return
-- result: date
+- - result: date
 
-
-## setDay
-
-### Parameters
-- date: date
-- value: number
-
-
-### Return
-- result: date
-
-
+--------------------------------------------
 ## setMinute
-
 ### Parameters
 - date: date
 - value: number
 
-
 ### Return
-- result: date
+- - result: date
 
-
-## setYear
-
+--------------------------------------------
+## setMillsecond
 ### Parameters
 - date: date
 - value: number
 
-
 ### Return
-- result: date
+- - result: date
 
-
+--------------------------------------------
 ## setMonth
-
 ### Parameters
 - date: date
 - value: number
 
+### Return
+- - result: date
+
+--------------------------------------------
+## setDay
+### Parameters
+- date: date
+- value: number
 
 ### Return
-- result: date
+- - result: date
 
-
+--------------------------------------------
 ## setSecond
-
 ### Parameters
 - date: date
 - value: number
 
-
 ### Return
-- result: date
+- - result: date
 
-
-## subtract
-
-### Parameters
-No Param
-
-### Return
-No Return
-
+--------------------------------------------
 ## timeOther
-
 ### Parameters
 - date: date
 - region: date
 
-
 ### Return
-- result: date
+- - result: date
 
-
-## timeAsiaSeoul
-
+--------------------------------------------
+## subtract
 ### Parameters
-- date: date
-
-
+No Param
 ### Return
-- result: date
-
-
-## setMillsecond
-
+- No Return
+--------------------------------------------
+## setYear
 ### Parameters
 - date: date
 - value: number
 
+### Return
+- - result: date
+
+--------------------------------------------
+## timeAsiaSeoul
+### Parameters
+- date: date
 
 ### Return
-- result: date
+- - result: date
 
+--------------------------------------------

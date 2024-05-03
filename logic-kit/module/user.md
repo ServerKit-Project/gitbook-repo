@@ -1,61 +1,49 @@
-
-## changePassword
-
-### Parameters
-- permit: permit
-
-
-### Return
-- result: boolean
-
-
-## smsCodeCheck
-
-### Parameters
-- data: object
-- permit: permit
-
-
-### Return
-- result: string
-
-
 ## login
-
 ### Parameters
 - permit: permit
 
-
 ### Return
-- result: object
+- - result: object
 
-
+--------------------------------------------
 ## getUserId
-
 ### Parameters
 No Param
-
 ### Return
-- userId: string
+- - userId: string
 
-
-## smsCodeSend
-
+--------------------------------------------
+## changePassword
 ### Parameters
 - permit: permit
 
-
 ### Return
-- result: object
+- - result: boolean
 
-
+--------------------------------------------
 ## postCreateUserById
-
 ### Parameters
 - data: object
 - permit: permit
 
+### Return
+- - result: string
+
+--------------------------------------------
+## smsCodeCheck
+### Parameters
+- data: object
+- permit: permit
 
 ### Return
-- result: string
+- - result: string
 
+--------------------------------------------
+## smsCodeSend
+### Parameters
+- permit: permit
+
+### Return
+- - result: object
+
+--------------------------------------------

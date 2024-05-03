@@ -1,199 +1,161 @@
-
 ## charAt
-
 ### Parameters
 - string: string
 - index: number
 
-
 ### Return
-- result: string
+- - result: string
 
-
-## indexOf
-
-### Parameters
-- string: string
-- searchString: string
-- position: number
-
-
-### Return
-- result: number
-
-
+--------------------------------------------
 ## includes
-
 ### Parameters
 - string: string
 - searchString: string
 - startIndex: number
 
-
 ### Return
-- result: boolean
+- - result: boolean
 
-
-## lastIndexOf
-
-### Parameters
-No Param
-
-### Return
-No Return
-
+--------------------------------------------
 ## endsWith
-
 ### Parameters
 No Param
-
 ### Return
-No Return
-
-## length
-
+- No Return
+--------------------------------------------
+## lastIndexOf
 ### Parameters
 No Param
-
 ### Return
-No Return
-
-## localeCompare
-
-### Parameters
-- referenceString: string
-- compareString: string
-
-
-### Return
-- result: number
-
-
-## regExpTest
-
-### Parameters
-- string: string
-- regex: string
-
-
-### Return
-- result: boolean
-
-
-## plus
-
-### Parameters
-- string: string
-- plus string: string
-
-
-### Return
-- result: string
-
-
-## repeat
-
-### Parameters
-- string: string
-- count: number
-
-
-### Return
-- result: string
-
-
-## startsWith
-
+- No Return
+--------------------------------------------
+## indexOf
 ### Parameters
 - string: string
 - searchString: string
 - position: number
 
+### Return
+- - result: number
+
+--------------------------------------------
+## length
+### Parameters
+No Param
+### Return
+- No Return
+--------------------------------------------
+## repeat
+### Parameters
+- string: string
+- count: number
 
 ### Return
-- result: boolean
+- - result: string
 
+--------------------------------------------
+## plus
+### Parameters
+- string: string
+- plus string: string
 
-## replaceAll
+### Return
+- - result: string
 
+--------------------------------------------
+## replace
 ### Parameters
 - string: string
 - from: string
 - to: string
 
-
 ### Return
-- result: string
-
-
-## stringify
-
+- No Return
+--------------------------------------------
+## localeCompare
 ### Parameters
-- object: object
-
+- referenceString: string
+- compareString: string
 
 ### Return
-- result: string
+- - result: number
 
-
-## toLowerCase
-
+--------------------------------------------
+## startsWith
 ### Parameters
 - string: string
-
+- searchString: string
+- position: number
 
 ### Return
-- result: string
+- - result: boolean
 
-
+--------------------------------------------
 ## split
-
 ### Parameters
 - string: string
 - separator: string
 
-
 ### Return
-- result: Array<string>
+- - result: Array<string>
 
-
-## replace
-
+--------------------------------------------
+## replaceAll
 ### Parameters
 - string: string
 - from: string
 - to: string
 
+### Return
+- - result: string
+
+--------------------------------------------
+## toUpperCase
+### Parameters
+- string: string
 
 ### Return
-No Return
+- - result: string
 
+--------------------------------------------
+## trim
+### Parameters
+- string: string
+
+### Return
+- - result: string
+
+--------------------------------------------
+## toLowerCase
+### Parameters
+- string: string
+
+### Return
+- - result: string
+
+--------------------------------------------
+## regExpTest
+### Parameters
+- string: string
+- regex: string
+
+### Return
+- - result: boolean
+
+--------------------------------------------
+## stringify
+### Parameters
+- object: object
+
+### Return
+- - result: string
+
+--------------------------------------------
 ## toString
-
 ### Parameters
 - data: T
 
-
 ### Return
-- result: string
+- - result: string
 
-
-## toUpperCase
-
-### Parameters
-- string: string
-
-
-### Return
-- result: string
-
-
-## trim
-
-### Parameters
-- string: string
-
-
-### Return
-- result: string
-
+--------------------------------------------

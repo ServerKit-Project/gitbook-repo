@@ -1,105 +1,83 @@
-
-## isArray
-
-### Parameters
-No Param
-
-### Return
-No Return
-
 ## at
-
 ### Parameters
 - array: array (T)
 
-
 ### Return
-- result: T
+- - result: T
 
-
-## length
-
+--------------------------------------------
+## includes
 ### Parameters
 - array: array (T)
 
-
 ### Return
-- result: number
+- - result: boolean
 
-
+--------------------------------------------
 ## concat
-
 ### Parameters
 - array_1: array (T)
 
-
 ### Return
-No Return
-
-## includes
-
-### Parameters
-- array: array (T)
-
-
-### Return
-- result: boolean
-
-
-## set
-
-### Parameters
-- array: array (T)
-
-
-### Return
-- result: array (T1)
-
-
-## join
-
-### Parameters
-- array: array (T)
-
-
-### Return
-- result: string
-
-
-## updateAtIndex
-
-### Parameters
-- array: array (T)
-
-
-### Return
-- array: array (T)
-
-
-## push
-
-### Parameters
-- array: array (T)
-
-
-### Return
-- array: array (T)
-
-
-## slice
-
+- No Return
+--------------------------------------------
+## isArray
 ### Parameters
 No Param
-
 ### Return
-No Return
-
-## indexOf
-
+- No Return
+--------------------------------------------
+## join
 ### Parameters
 - array: array (T)
 
+### Return
+- - result: string
+
+--------------------------------------------
+## length
+### Parameters
+- array: array (T)
 
 ### Return
-- result: number
+- - result: number
 
+--------------------------------------------
+## push
+### Parameters
+- array: array (T)
+
+### Return
+- - array: array (T)
+
+--------------------------------------------
+## updateAtIndex
+### Parameters
+- array: array (T)
+
+### Return
+- - array: array (T)
+
+--------------------------------------------
+## set
+### Parameters
+- array: array (T)
+
+### Return
+- - result: array (T1)
+
+--------------------------------------------
+## slice
+### Parameters
+No Param
+### Return
+- No Return
+--------------------------------------------
+## indexOf
+### Parameters
+- array: array (T)
+
+### Return
+- - result: number
+
+--------------------------------------------

@@ -1,185 +1,149 @@
-
 ## getCron
-
 ### Parameters
 - date: date
 
-
 ### Return
-- result: string
+- - result: string
 
-
-## getDay
-
-### Parameters
-- date: date
-
-
-### Return
-- result: number
-
-
+--------------------------------------------
 ## getDate
-
 ### Parameters
 - date: date
 
-
 ### Return
-- result: number
+- - result: number
 
-
-## getHours
-
-### Parameters
-- date: date
-
-
-### Return
-- result: number
-
-
-## getFriday
-
-### Parameters
-- date: date
-
-
-### Return
-- result: date
-
-
+--------------------------------------------
 ## getFullYear
-
 ### Parameters
 - date: date
 
-
 ### Return
-- result: number
+- - result: number
 
-
-## getOnlyDate
-
+--------------------------------------------
+## getDay
 ### Parameters
 - date: date
 
-
 ### Return
-- date: date
+- - result: number
 
-
+--------------------------------------------
 ## getMinutes
-
 ### Parameters
 - date: date
 
-
 ### Return
-- result: number
+- - result: number
 
-
+--------------------------------------------
 ## getMilliseconds
-
 ### Parameters
 - date: date
 
-
 ### Return
-- result: number
+- - result: number
 
-
-## newDate
-
+--------------------------------------------
+## nowDate
 ### Parameters
-- value: string
-
+No Param
+### Return
+- No Return
+--------------------------------------------
+## getHours
+### Parameters
+- date: date
 
 ### Return
-- result: date
+- - result: number
 
-
+--------------------------------------------
 ## setDate
-
 ### Parameters
 - date: date
 - dateValue: number
 
-
 ### Return
-- result: date
+- - result: date
 
-
+--------------------------------------------
 ## setHours
-
 ### Parameters
 - date: date
 - hoursValue: number
 
-
 ### Return
-- result: date
+- - result: date
 
-
-## setMinutes
-
+--------------------------------------------
+## newDate
 ### Parameters
-- date: date
-- minutesValue: number
-
+- value: string
 
 ### Return
-- result: date
+- - result: date
 
-
+--------------------------------------------
 ## setMilliseconds
-
 ### Parameters
 - date: date
 - millisecondsValue: number
 
-
 ### Return
-- result: date
+- - result: date
 
-
-## nowDate
-
-### Parameters
-No Param
-
-### Return
-No Return
-
-## setYear
-
+--------------------------------------------
+## setMinutes
 ### Parameters
 - date: date
-- yearValue: number
-
+- minutesValue: number
 
 ### Return
-- result: date
+- - result: date
 
-
+--------------------------------------------
 ## setMonth
-
 ### Parameters
 - date: date
 - monthValue: number
 
-
 ### Return
-- result: date
+- - result: date
 
-
+--------------------------------------------
 ## setSeconds
-
 ### Parameters
 - date: date
 - secondsValue: number
 
+### Return
+- - result: date
+
+--------------------------------------------
+## setYear
+### Parameters
+- date: date
+- yearValue: number
 
 ### Return
-- result: date
+- - result: date
 
+--------------------------------------------
+## getFriday
+### Parameters
+- date: date
+
+### Return
+- - result: date
+
+--------------------------------------------
+## getOnlyDate
+### Parameters
+- date: date
+
+### Return
+- - date: date
+
+--------------------------------------------
