@@ -96,7 +96,7 @@ description: How to get started quickly with ServerKit.
 
 데이터 베이스를 작성하는 단계는 기본정보 설정 부터 완료까지 크게 4단계 입니다.
 
-![](<../.gitbook/assets/로직 키트.png>) 1단계(기본정보 설정)에서 이름과 설명을 입력합니다.
+&#x20;1단계(기본정보 설정)에서 이름과 설명을 입력합니다.
 
 &#x20;2단계(디자인 선택)에서 작성해 둔 스키마를 선택 합니다.
 
@@ -120,11 +120,11 @@ description: How to get started quickly with ServerKit.
 
 바로 로직키트 입니다.&#x20;
 
+<figure><img src="../.gitbook/assets/로직 키트.png" alt=""><figcaption></figcaption></figure>
+
 로직키트는 간단한 마우스 키보드 조작만드로 쉽게 로직을 작성할 수 있게 도와줍니다.
 
 로직키트 메뉴로 이동 후 새로운 로직을 만들기 위해 + 버튼을 클릭합니다.
-
-<figure><img src="../.gitbook/assets/스크린샷 2024-04-25 오후 12.09.06.png" alt=""><figcaption><p>로직키트 생성</p></figcaption></figure>
 
 로직키트에서 각 로직의 핵심이 되는 부분을 우리는 노드 라고 부릅니다.
 
@@ -142,9 +142,7 @@ endNode 에는 로직보드의 실행 결과를 입력 할 수 있습니다.
 
 pin(노드들의 맨 위에 달려있는 flow로 회색 선)에 따라 순서대로 설명드리도록 하겠습니다.
 
-<figure><img src="../.gitbook/assets/로직보드 화면 (2).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/스크린샷 2024-02-14 오후 3.31.11.png" alt=""><figcaption><p>로직키트 보드</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/로직 키트2.png" alt=""><figcaption></figcaption></figure>
 
 ### 1. Start 노드
 
@@ -216,13 +214,29 @@ postCeate의 경우 콜백이 2개입니다. 성공일 경우 succese로 5번째
 
 라우트 키트로 이동하여 라우트 생성을 클릭합니다.&#x20;
 
-<figure><img src="../.gitbook/assets/스크린샷 2024-04-25 오후 12.11.08.png" alt=""><figcaption><p>라우터키트 메뉴</p></figcaption></figure>
-
 <figure><img src="../.gitbook/assets/스크린샷 2024-04-25 오후 12.12.57 (1).png" alt=""><figcaption><p>라우터키트 생성</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/스크린샷 2024-02-14 오후 4.35.19.png" alt=""><figcaption><p>라우터키트 생성</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/라우터 키트1 (1).png" alt=""><figcaption></figcaption></figure>
 
-라우트의 경로 및 메서드를 설정해준 다음 로직보드 선택에서 이전 스텝에서  만든 로직의 스냅샷을 선택합니다.
+
+
+<figure><img src="../.gitbook/assets/라우터 키트2.png" alt=""><figcaption></figcaption></figure>
+
+먼저 메서드를 선택합니다.
+
+<figure><img src="../.gitbook/assets/라우터 키트3.png" alt=""><figcaption></figcaption></figure>
+
+게시글을 하나 만들것이기 때문에 post 메서드를 선택하겠습니다.
+
+그리고 엔드포인트는 /posts 로 작성해 주겠습니다.
+
+
+
+다음은 작성한 로직을 선택하겠습니다.
+
+이전 스텝에서  만든 로직의 스냅샷을 선택합니다.
+
+<figure><img src="../.gitbook/assets/라우터 키트4.png" alt=""><figcaption></figcaption></figure>
 
 그래고 생성 버튼을 클릭하면 로직에 연결된 라우트 1개가 생성이 됩니다.
 
@@ -232,8 +246,6 @@ postCeate의 경우 콜백이 2개입니다. 성공일 경우 succese로 5번째
 
 이제 실제로 배포를 하기 이전에 우리가 만든 로직과, 라우트가 잘 작동하는지 테스트를 해보겠습니다.
 
-<figure><img src="../.gitbook/assets/스크린샷 2024-04-25 오후 2.08.22 (1).png" alt=""><figcaption><p>배포 메뉴</p></figcaption></figure>
-
 서버키트는 아주 간편하게 사용할 수 있는 배포 기능을 제공합니다.
 
 배포하기를 클릭하기만 하면 RouterKit에 있는 라우트가 모두 배포됩니다.&#x20;
@@ -242,27 +254,27 @@ postCeate의 경우 콜백이 2개입니다. 성공일 경우 succese로 5번째
 
 배포하기 이전에 실제로 잘 작동하는지 테스트를 먼저 해보겠습니다.
 
-<figure><img src="../.gitbook/assets/스크린샷 2024-04-25 오후 2.13.19.png" alt=""><figcaption><p>테스트 메뉴</p></figcaption></figure>
-
 테스트 메뉴를 클릭 후 최신화 버튼을 클릭합니다.
 
 현재 라우트키트 에 있는 라우트를 모두 테스트 할수 있게 됩니다.
 
+<figure><img src="../.gitbook/assets/테스트.png" alt=""><figcaption></figcaption></figure>
 
 
-테스트를 진행하기 위해 api 관리 탭으로 들어갑니다.&#x20;
 
-<figure><img src="../.gitbook/assets/스크린샷 2024-04-25 오후 2.15.50.png" alt=""><figcaption><p>테스트 API 탭</p></figcaption></figure>
+테스트를 진행하기 위해 api 관리 탭으로 들어갑니다. ![](../.gitbook/assets/테스트1.png)
 
 이전단계에서 작성한 api 를 선택합니다. 후 테스트 메뉴로 들어갑니다.
 
-<figure><img src="../.gitbook/assets/스크린샷 2024-04-25 오후 2.20.46.png" alt=""><figcaption><p>테스트 메뉴</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/스크린샷 2024-04-25 오후 2.15.50.png" alt=""><figcaption><p>테스트 API 탭</p></figcaption></figure>
 
 배포한 api 가 잘 작동하는지 테스트를 할 수 있습니다.
 
+<figure><img src="../.gitbook/assets/테스트2.png" alt=""><figcaption></figcaption></figure>
+
 라우터에서 작성한 body 값을 입력후 API 테스트 시작 버튼을 클릭 합니다.&#x20;
 
-<figure><img src="../.gitbook/assets/스크린샷 2024-04-25 오후 2.22.02.png" alt=""><figcaption><p>API 테스트 성공</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/테스트3.png" alt=""><figcaption></figcaption></figure>
 
 데이터 구조 작성(스킴키트) 부터 로직러너(api 테스트)까지 전반적인 기능을 이용해서 게시글을 작성해 보았습니다.
 
