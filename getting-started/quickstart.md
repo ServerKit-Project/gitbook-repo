@@ -90,19 +90,21 @@ description: How to get started quickly with ServerKit.
 
 인제 만든 게시판 데이터 구조를 사용하기 위해 DB키트로 이동해서 새 데이터베이스 생성을 클릭해줍니다. 차례대로 이름, 설명을 적는 기본 정보 설정을 해준 다음을 클릭 합니다.
 
-<figure><img src="../.gitbook/assets/데이터 베이스 생성2 (1).png" alt=""><figcaption></figcaption></figure>
+디자인 선택에서 SchemeKit에서 만든 게시판 데이터 구조를 선택합니다.&#x20;
 
-디자인 선택에서 SchemeKit에서 만든 게시판 데이터 구조를 선택합니다. ![](<../.gitbook/assets/데이터 베이스 생성1 (2).png>)
+<figure><img src="../.gitbook/assets/데이터 베이스 생성1 (2).png" alt=""><figcaption></figcaption></figure>
 
 데이터 베이스를 작성하는 단계는 기본정보 설정 부터 완료까지 크게 4단계 입니다.
 
-&#x20;1단계(기본정보 설정)에서 이름과 설명을 입력합니다.
+![](<../.gitbook/assets/로직 키트.png>) 1단계(기본정보 설정)에서 이름과 설명을 입력합니다.
 
 &#x20;2단계(디자인 선택)에서 작성해 둔 스키마를 선택 합니다.
 
 지금은 이정도면 충분합니다. 빠르게 완료단계로 넘어갑니다.
 
 최종에서 완료를 누르면 새로운 데이터베이스가 생성됩니다.
+
+<figure><img src="../.gitbook/assets/데이터 베이스 생성2 (1).png" alt=""><figcaption></figcaption></figure>
 
 이제 데이터베이스에 새로운 데이터를 채워 넣을 수 있게 되었습니다.
 
@@ -122,11 +124,11 @@ description: How to get started quickly with ServerKit.
 
 로직키트 메뉴로 이동 후 새로운 로직을 만들기 위해 + 버튼을 클릭합니다.
 
-<figure><img src="../.gitbook/assets/스크린샷 2024-04-25 오후 12.07.44.png" alt=""><figcaption><p>로직키트 메뉴</p></figcaption></figure>
-
 <figure><img src="../.gitbook/assets/스크린샷 2024-04-25 오후 12.09.06.png" alt=""><figcaption><p>로직키트 생성</p></figcaption></figure>
 
 로직키트에서 각 로직의 핵심이 되는 부분을 우리는 노드 라고 부릅니다.
+
+<figure><img src="../.gitbook/assets/로직 키트1.gif" alt=""><figcaption></figcaption></figure>
 
 예를 들어서 로직의 시작과 끝을 우리는 startNode 와 endNode 로 표현할 수 있습니다.
 
