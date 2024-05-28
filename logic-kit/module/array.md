@@ -1,131 +1,137 @@
-## at
-
-### Parameters
-
-- array: array (T)
-
-### Return
-
-- result: T
-
+---
+description: 배열 모듈
 ---
 
-## concat
+# Array
 
-### Parameters
+### at
 
-- array_1: array (T)
+#### Parameters
 
-### Return
+* array: array (T)
 
-- No Return
+#### Return
 
----
+* result: T
 
-## join
+***
 
-### Parameters
+### concat
 
-- array: array (T)
+#### Parameters
 
-### Return
+* array\_1: array (T)
 
-- result: string
+#### Return
 
----
+* No Return
 
-## indexOf
+***
 
-### Parameters
+### join
 
-- array: array (T)
+#### Parameters
 
-### Return
+* array: array (T)
 
-- result: number
+#### Return
 
----
+* result: string
 
-## length
+***
 
-### Parameters
+### indexOf
 
-- array: array (T)
+#### Parameters
 
-### Return
+* array: array (T)
 
-- result: number
+#### Return
 
----
+* result: number
 
-## includes
+***
 
-### Parameters
+### length
 
-- array: array (T)
+#### Parameters
 
-### Return
+* array: array (T)
 
-- result: boolean
+#### Return
 
----
+* result: number
 
-## push
+***
 
-### Parameters
+### includes
 
-- array: array (T)
+#### Parameters
 
-### Return
+* array: array (T)
 
-- array: array (T)
+#### Return
 
----
+* result: boolean
 
-## isArray
+***
 
-### Parameters
+### push
 
-- No Param
+#### Parameters
 
-### Return
+* array: array (T)
 
-- No Return
+#### Return
 
----
+* array: array (T)
 
-## slice
+***
 
-### Parameters
+### isArray
 
-- No Param
+#### Parameters
 
-### Return
+* No Param
 
-- No Return
+#### Return
 
----
+* No Return
 
-## set
+***
 
-### Parameters
+### slice
 
-- array: array (T)
+#### Parameters
 
-### Return
+* No Param
 
-- result: array (T1)
+#### Return
 
----
+* No Return
 
-## updateAtIndex
+***
 
-### Parameters
+### set
 
-- array: array (T)
+#### Parameters
 
-### Return
+* array: array (T)
 
-- array: array (T)
+#### Return
 
----
+* result: array (T1)
+
+***
+
+### updateAtIndex
+
+#### Parameters
+
+* array: array (T)
+
+#### Return
+
+* array: array (T)
+
+***

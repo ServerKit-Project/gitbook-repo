@@ -1,23 +1,42 @@
-## hashSync
-### Parameters
-- data: string
-- salt: number
+---
+description: 암호화 모듈
+---
 
-### Return
-- result: string
+# Bcrypt
 
---------------------------------------------
-## genSaltSync
-### Parameters
-- round: number
+### hashSync
 
-### Return
-- result: string
+#### Parameters
 
---------------------------------------------
-## compareSync
-### Parameters
-- No Param
-### Return
-- No Return
---------------------------------------------
+* data: string
+* salt: number
+
+#### Return
+
+* result: string
+
+***
+
+### genSaltSync
+
+#### Parameters
+
+* round: number
+
+#### Return
+
+* result: string
+
+***
+
+### compareSync
+
+#### Parameters
+
+* No Param
+
+#### Return
+
+* No Return
+
+***

@@ -1,40 +1,61 @@
-## signUp2faSave
-### Parameters
-- phoneNumber: string
-- verificationCode: string
-- TTL: number
+---
+description: 2차 인증 모듈
+---
 
-### Return
-- result: number
+# Auth
 
---------------------------------------------
-## validateMFASession
-### Parameters
-- userGroupId: string
-- verificationCode: string
-- sessionId: string
+### signUp2faSave
 
-### Return
-- result: object
+#### Parameters
 
---------------------------------------------
-## signUp2faCheck
-### Parameters
-- verificationCode: string
-- phoneNumber: string
+* phoneNumber: string
+* verificationCode: string
+* TTL: number
 
-### Return
-- result: boolean
+#### Return
 
---------------------------------------------
-## createMFASession
-### Parameters
-- userGroupId: string
-- verificationCode: string
-- userId: string
-- TTL: number
+* result: number
 
-### Return
-- result: object
+***
 
---------------------------------------------
+### validateMFASession
+
+#### Parameters
+
+* userGroupId: string
+* verificationCode: string
+* sessionId: string
+
+#### Return
+
+* result: object
+
+***
+
+### signUp2faCheck
+
+#### Parameters
+
+* verificationCode: string
+* phoneNumber: string
+
+#### Return
+
+* result: boolean
+
+***
+
+### createMFASession
+
+#### Parameters
+
+* userGroupId: string
+* verificationCode: string
+* userId: string
+* TTL: number
+
+#### Return
+
+* result: object
+
+***

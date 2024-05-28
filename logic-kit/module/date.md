@@ -1,149 +1,228 @@
-## getFriday
-### Parameters
-- date: date
+---
+description: 날짜 모듈
+---
 
-### Return
-- result: date
+# Date
 
---------------------------------------------
-## getDay
-### Parameters
-- date: date
+### getFriday
 
-### Return
-- result: number
+#### Parameters
 
---------------------------------------------
-## getDate
-### Parameters
-- date: date
+* date: date
 
-### Return
-- result: number
+#### Return
 
---------------------------------------------
-## getHours
-### Parameters
-- date: date
+* result: date
 
-### Return
-- result: number
+***
 
---------------------------------------------
-## getOnlyDate
-### Parameters
-- date: date
+### getDay
 
-### Return
-- date: date
+#### Parameters
 
---------------------------------------------
-## getMilliseconds
-### Parameters
-- date: date
+* date: date
 
-### Return
-- result: number
+#### Return
 
---------------------------------------------
-## getFullYear
-### Parameters
-- date: date
+* result: number
 
-### Return
-- result: number
+***
 
---------------------------------------------
-## getCron
-### Parameters
-- date: date
+### getDate
 
-### Return
-- result: string
+#### Parameters
 
---------------------------------------------
-## getMinutes
-### Parameters
-- date: date
+* date: date
 
-### Return
-- result: number
+#### Return
 
---------------------------------------------
-## newDate
-### Parameters
-- value: string
+* result: number
 
-### Return
-- result: date
+***
 
---------------------------------------------
-## nowDate
-### Parameters
-- No Param
-### Return
-- No Return
---------------------------------------------
-## setMilliseconds
-### Parameters
-- date: date
-- millisecondsValue: number
+### getHours
 
-### Return
-- result: date
+#### Parameters
 
---------------------------------------------
-## setMinutes
-### Parameters
-- date: date
-- minutesValue: number
+* date: date
 
-### Return
-- result: date
+#### Return
 
---------------------------------------------
-## setMonth
-### Parameters
-- date: date
-- monthValue: number
+* result: number
 
-### Return
-- result: date
+***
 
---------------------------------------------
-## setDate
-### Parameters
-- date: date
-- dateValue: number
+### getOnlyDate
 
-### Return
-- result: date
+#### Parameters
 
---------------------------------------------
-## setSeconds
-### Parameters
-- date: date
-- secondsValue: number
+* date: date
 
-### Return
-- result: date
+#### Return
 
---------------------------------------------
-## setYear
-### Parameters
-- date: date
-- yearValue: number
+* date: date
 
-### Return
-- result: date
+***
 
---------------------------------------------
-## setHours
-### Parameters
-- date: date
-- hoursValue: number
+### getMilliseconds
 
-### Return
-- result: date
+#### Parameters
 
---------------------------------------------
+* date: date
+
+#### Return
+
+* result: number
+
+***
+
+### getFullYear
+
+#### Parameters
+
+* date: date
+
+#### Return
+
+* result: number
+
+***
+
+### getCron
+
+#### Parameters
+
+* date: date
+
+#### Return
+
+* result: string
+
+***
+
+### getMinutes
+
+#### Parameters
+
+* date: date
+
+#### Return
+
+* result: number
+
+***
+
+### newDate
+
+#### Parameters
+
+* value: string
+
+#### Return
+
+* result: date
+
+***
+
+### nowDate
+
+#### Parameters
+
+* No Param
+
+#### Return
+
+* No Return
+
+***
+
+### setMilliseconds
+
+#### Parameters
+
+* date: date
+* millisecondsValue: number
+
+#### Return
+
+* result: date
+
+***
+
+### setMinutes
+
+#### Parameters
+
+* date: date
+* minutesValue: number
+
+#### Return
+
+* result: date
+
+***
+
+### setMonth
+
+#### Parameters
+
+* date: date
+* monthValue: number
+
+#### Return
+
+* result: date
+
+***
+
+### setDate
+
+#### Parameters
+
+* date: date
+* dateValue: number
+
+#### Return
+
+* result: date
+
+***
+
+### setSeconds
+
+#### Parameters
+
+* date: date
+* secondsValue: number
+
+#### Return
+
+* result: date
+
+***
+
+### setYear
+
+#### Parameters
+
+* date: date
+* yearValue: number
+
+#### Return
+
+* result: date
+
+***
+
+### setHours
+
+#### Parameters
+
+* date: date
+* hoursValue: number
+
+#### Return
+
+* result: date
+
+***
